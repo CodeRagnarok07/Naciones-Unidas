@@ -1,0 +1,125 @@
+/*************** theme colors ***************/
+
+.primary,
+.bg-primary {
+    background-color: v.$primary;
+    color: v.$white;
+}
+
+.bg-secondary {
+    background-color: v.$black;
+    color: white;
+}
+
+.fill-black {
+    svg {
+        fill: black;
+
+        path {
+            fill: black;
+
+        }
+    }
+}
+
+.light,
+.bg-light {
+    background-color: v.$primary;
+    color: v.$black;
+    border: 1.5px v.$gray1 solid;
+}
+
+.light2,
+.bg-light2 {
+    background-color: v.$light2;
+    color: v.$black;
+    border: 1.5px v.$light2 solid;
+}
+
+
+.success,
+.bg-success {
+    background-color: v.$success;
+    color: v.$white;
+}
+
+.info,
+.bg-info {
+    background-color: v.$info;
+    color: v.$black;
+}
+
+.warning,
+.bg-warning {
+    background-color: v.$warning;
+    color: v.$white;
+}
+
+.danger,
+.bg-danger {
+    background-color: v.$danger;
+    color: v.$primary;
+}
+
+.danger,
+.bg-danger {
+    background-color: v.$danger;
+    color: v.$danger;
+}
+
+.bg-gray {
+    color: v.$black;
+    background-color: v.$light1;
+}
+
+.bg-white {
+    background-color: v.$white;
+    color: v.$primary;
+
+}
+
+.white-cont {
+    background-color: v.$white;
+
+}
+
+/*************** text colors ***************/
+
+.text-primary {
+    color: v.$primary;
+
+}
+
+
+
+//********** TAG THEME ************ //
+
+.tag-red {
+    --tw-text-opacity: 1;
+    color: v.$red;
+    background-color: v.$red-light;
+}
+
+.tag-orange {
+    --tw-text-opacity: 1;
+    color: v.$orange;
+    background-color: v.$orange-light;
+}
+
+.tag-green {
+    --tw-text-opacity: 1;
+    color: v.$green;
+    background-color: v.$green-light;
+}
+
+.tag-purple {
+    --tw-text-opacity: 1;
+    color: v.$purple;
+    background-color: v.$purple-light;
+}
+
+.tag-gray {
+    --tw-text-opacity: 1;
+    color: v.$black;
+    background-color: v.$light2;
+}

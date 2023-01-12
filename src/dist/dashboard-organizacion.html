@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/resets.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+
+<body class="">
+
+    <nav class="navbar font-sm bg-primary">
+
+
+        <div class="container flex-bt">
+
+            <div class="w-max md:hidden">
+                <div class="nav-button-left cursor-pointer px-5" onclick="showSidebar(this)">
+                    <div class=" ">
+                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="logo" href="index.html">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+
+            <div class="w-max">
+                <div class="nav-button-right ">
+                    <div class="tooltip-responsive  w-auto flex items-center h-full px-5 ">
+
+                        <div class="h-9 w-auto">
+                            <img class="avatar"
+                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDxIOEBAODw8PEBAPEhAODQ8NEQ8PFREWFhURFRMYHSggGBolGxMTITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAABQQBAwIH/8QANRABAAEBBAcHAwIHAQAAAAAAAAECAwQRIQUSMUFRYXEigZGhscHRMjPhQvBScoKSorLxI//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB52ttTTtmI5b/AAB6Cfa6Qn9MYc5z8mWu2qq21TPfl4AszJihALwhRMxsmY6S9aLzXGyqe+cfUFgYLG/7q474+G6J3g6AAAAAAAAAAAAAAAAAADBpC3/RH9XwDl5vu6j+74YpkAAAAAAAGuwvurTFOrjhv1sN/RkAb40jxo/yx9myztIqjWjZKI1XC21atWdlXlO4FMAAAAAAAAAAAAAAAHKpwjHhGKJXVjMzO2ZxVr5OFnV0w8ZwSAAAAAAAAAAAAAWbCvWpirjHnvejLo2rsYcKp9pagAAAAAAAAAAAAAAZ7/8AbnrHqlKmkPtz1j1SwAAAAAAAAAAAAb9FzlVHOJ9fhuT9GTnV0hQAAAAAAAAAAAAAABnv8f8AnPWPVKWbejWpmnjHnuRgAAAAAAAAAAAAbNGfVV0j1UWLRlOVU8ZiPD/raAAAAAAAAAAAAAAD4tbSKYxmcISrzMTXM05xOfy2aT+mP5vZOABwHQAAAAAB3049z5B12iiapwjOZccBbsbPUpinh5y+2e41TNnGO7GGgAAAAAAAAAAAAAAGbSFONGPCYn290tbtKNaJp4xMIkwA+f35PpwAAByPy6AfgAHPnB397gAMR2inGYjfMxHiCtcqcLOnnn4zi93IjDLhk6AAAAAAAAAAAAAAAk36jVrnnnHft88VYBCHpeacK6o5zPdObzAAAAAAAAAe9yoxtI5Zz3PGiMZiOMxC4AAAAAAAAAAAAAAAAAADDpKyyiuN2U9NzAt104xMTsmMEWqnCZidsTgDgAAAAAAANWj7LGrW3U+qm8bpZ6tERvnOesvYAAAAAAAAAAAAAAAAAABKv9OFpPOIn29lVM0jPb6Ux7gygAAAAAERjkPqy+qOseoLYAAAAAAAAAAAAAAAAAAACPeqsa6p54eGXsoXm9RRGETjVw4dUoAAAAAAAicM+AAuROMYxsnN1Pud7iI1atm6eHKVCJAAAAAAAAAAAAAAAGa2vtNOztTy2eLBbXiqvbOXCMoBvtr7TTlHanls8WK1vddW/COFOXm8AAAAAAAAAAAB92VtVT9MzHLbHg+AG6z0h/FT30/DVZXiirZMY8JylHcBeEeyvNdOycY4TnDbY3+mcquzPHbANY5E45xnHJ0AAAAAGG9X3Ds0bd9XwD3vF6poy21cI9062vFVe2cuEZQ8gAAAAAAAAAAAAAAAAAAAAHpY21VGye7dPc3WF+pnKrsz5fhNAXRJu15mjnTw+FWiqJiJjZOYOgA+bX6Z6T6IboAAAAAAAAAAAAAAAAAAAAAAAAAq3D7dPf8A7SANAAP/2Q=="
+                                alt="">
+                        </div>
+
+                        <div class="hidden md:flex">Elena Miranda</div>
+
+                        <div class="tooltip_options bg-white font-medium">
+
+                            <div class="option" onclick="showModal('#user-form-modal')">
+                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.751 5C12.751 5.99456 12.3559 6.94839 11.6526 7.65165C10.9493 8.35491 9.99552 8.75 9.00095 8.75C8.00639 8.75 7.05256 8.35491 6.3493 7.65165C5.64604 6.94839 5.25095 5.99456 5.25095 5C5.25095 4.00544 5.64604 3.05161 6.3493 2.34835C7.05256 1.64509 8.00639 1.25 9.00095 1.25C9.99552 1.25 10.9493 1.64509 11.6526 2.34835C12.3559 3.05161 12.751 4.00544 12.751 5V5ZM1.50195 19.118C1.53409 17.1504 2.33829 15.2742 3.74113 13.894C5.14397 12.5139 7.03304 11.7405 9.00095 11.7405C10.9689 11.7405 12.8579 12.5139 14.2608 13.894C15.6636 15.2742 16.4678 17.1504 16.5 19.118C14.1473 20.1968 11.5891 20.7535 9.00095 20.75C6.32495 20.75 3.78495 20.166 1.50195 19.118Z"
+                                        stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+
+                                <div>Ajustes de cuenta</div>
+                            </div>
+
+
+                            <div class="option">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.75 7V3.25C11.75 2.65326 11.5129 2.08097 11.091 1.65901C10.669 1.23705 10.0967 1 9.5 1H3.5C2.90326 1 2.33097 1.23705 1.90901 1.65901C1.48705 2.08097 1.25 2.65326 1.25 3.25V16.75C1.25 17.3467 1.48705 17.919 1.90901 18.341C2.33097 18.7629 2.90326 19 3.5 19H9.5C10.0967 19 10.669 18.7629 11.091 18.341C11.5129 17.919 11.75 17.3467 11.75 16.75V13M14.75 13L17.75 10M17.75 10L14.75 7M17.75 10H5"
+                                        stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div>Cerrar sesión</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- modal for navbar -->
+    <div class="modal hidden modal-util"></div>
+
+    <section class="container mt-12 mb-20">
+
+
+        <header class="header mb-6">
+            <div class="navigator">
+                <h5>Inicio</h5>
+                <i>
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.875 0.75L7.125 7L0.875 13.25" stroke="#CED5DC" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </i>
+                <h5>other</h5>
+            </div>
+            <div class="flex flex-col md:flex-row ">
+                <h1 class="title md:border-r pr-4 ">Ministerio de Relaciones Exteriores</h1>
+
+                <div class="flex items-center gap-3 mb-3 md:px-9 mt-2 md:mt-0">
+                    <i>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 19V10.75M13.75 19V10.75M6.25 19V10.75M1 7L10 1L19 7M17.5 19V8.332C15.0189 7.94356 12.5113 7.74897 10 7.75C7.449 7.75 4.944 7.95 2.5 8.332V19M1 19H19M10 4.75H10.008V4.758H10V4.75Z"
+                                stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </i>
+                    <p class="uppercase">
+                        paraguay
+                    </p>
+                </div>
+            </div>
+
+        </header>
+        <hr>
+
+        <div class="main-container dashboard">
+       
+            <aside id="sidebar" class="dashboard-left-bar hidden">
+                <div class="section-select  ">
+                    <a href="" class="btn-section dashboard current">
+                        <!-- active -->
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 0.431932L17.159 8.59093C17.189 8.62093 17.219 8.64893 17.25 8.67693V14.8749C17.25 15.9099 16.41 16.7499 15.375 16.7499H12C11.8011 16.7499 11.6103 16.6709 11.4697 16.5303C11.329 16.3896 11.25 16.1988 11.25 15.9999V11.4999C11.25 11.301 11.171 11.1103 11.0303 10.9696C10.8897 10.8289 10.6989 10.7499 10.5 10.7499H7.5C7.30109 10.7499 7.11032 10.8289 6.96967 10.9696C6.82902 11.1103 6.75 11.301 6.75 11.4999V15.9999C6.75 16.1988 6.67098 16.3896 6.53033 16.5303C6.38968 16.6709 6.19891 16.7499 6 16.7499H2.625C2.12772 16.7499 1.65081 16.5524 1.29917 16.2008C0.947544 15.8491 0.75 15.3722 0.75 14.8749V8.67693C0.781111 8.6491 0.811456 8.62042 0.841 8.59093L9 0.429932V0.431932Z"
+                                fill="#39619A" />
+                        </svg>
+
+                        <!-- inactive -->
+                        <!-- <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 11L10.204 2.04504C10.4151 1.8343 10.7012 1.71594 10.9995 1.71594C11.2978 1.71594 11.5839 1.8343 11.795 2.04504L20.75 11M3.5 8.75004V18.875C3.5 19.496 4.004 20 4.625 20H8.75V15.125C8.75 14.504 9.254 14 9.875 14H12.125C12.746 14 13.25 14.504 13.25 15.125V20H17.375C17.996 20 18.5 19.496 18.5 18.875V8.75004M7.25 20H15.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                         -->
+
+                        <p>Inicio</p>
+                    </a>
+                    <a href="" class="btn-section dashboard relative">
+                        <!-- active -->
+                        <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.99992 0.25C8.2097 0.25 6.49282 0.961159 5.22695 2.22703C3.96108 3.4929 3.24992 5.20979 3.24992 7V7.75C3.253 9.78919 2.49772 11.7567 1.13092 13.27C1.04884 13.3611 0.990326 13.4708 0.960509 13.5898C0.930693 13.7087 0.93048 13.8331 0.959887 13.9521C0.989294 14.0711 1.04743 14.1811 1.12919 14.2724C1.21096 14.3638 1.31387 14.4337 1.42892 14.476C2.97292 15.046 4.58892 15.466 6.25992 15.719C6.22229 16.2331 6.29108 16.7495 6.46199 17.2359C6.63289 17.7222 6.90224 18.1681 7.25321 18.5457C7.60418 18.9233 8.02924 19.2245 8.50183 19.4304C8.97442 19.6364 9.4844 19.7427 9.99992 19.7427C10.5154 19.7427 11.0254 19.6364 11.498 19.4304C11.9706 19.2245 12.3957 18.9233 12.7466 18.5457C13.0976 18.1681 13.3669 17.7222 13.5378 17.2359C13.7088 16.7495 13.7775 16.2331 13.7399 15.719C15.3879 15.4692 17.0063 15.0523 18.5699 14.475C18.6848 14.4326 18.7875 14.3627 18.8692 14.2715C18.9508 14.1802 19.0088 14.0703 19.0382 13.9515C19.0676 13.8326 19.0675 13.7084 19.0378 13.5896C19.0081 13.4708 18.9498 13.3611 18.8679 13.27C17.5015 11.7565 16.7466 9.78906 16.7499 7.75V7C16.7499 5.20979 16.0388 3.4929 14.7729 2.22703C13.507 0.961159 11.7901 0.25 9.99992 0.25ZM7.74992 16C7.74992 15.966 7.74992 15.933 7.75192 15.9C9.24755 16.0348 10.7523 16.0348 12.2479 15.9L12.2499 16C12.2499 16.5967 12.0129 17.169 11.5909 17.591C11.1689 18.0129 10.5967 18.25 9.99992 18.25C9.40318 18.25 8.83088 18.0129 8.40893 17.591C7.98697 17.169 7.74992 16.5967 7.74992 16Z"
+                                fill="#39619A" />
+                        </svg> -->
+                        <!-- inactive -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.857 15.082C14.7202 14.8614 16.5509 14.4217 18.311 13.772C16.8204 12.1208 15.9967 9.9745 16 7.75V7C16 5.4087 15.3679 3.88258 14.2427 2.75736C13.1174 1.63214 11.5913 1 10 1C8.40872 1 6.8826 1.63214 5.75738 2.75736C4.63216 3.88258 4.00002 5.4087 4.00002 7V7.75C4.00304 9.97463 3.17901 12.121 1.68802 13.772C3.42102 14.412 5.24802 14.857 7.14302 15.082M12.857 15.082C10.959 15.3071 9.04104 15.3071 7.14302 15.082M12.857 15.082C13.0011 15.5319 13.037 16.0094 12.9616 16.4757C12.8863 16.942 12.7019 17.384 12.4234 17.7656C12.145 18.1472 11.7803 18.4576 11.3592 18.6716C10.9381 18.8856 10.4724 18.9972 10 18.9972C9.52765 18.9972 9.06195 18.8856 8.64083 18.6716C8.21972 18.4576 7.85509 18.1472 7.57664 17.7656C7.29819 17.384 7.11379 16.942 7.03844 16.4757C6.96309 16.0094 6.99892 15.5319 7.14302 15.082M1.12402 5.5C1.40599 3.82497 2.15782 2.26444 3.29202 1M16.708 1C17.8422 2.26444 18.5941 3.82497 18.876 5.5"
+                                stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <p class="notification" cont="5">Notificaciones</p>
+
+
+                    </a>
+                    <a href="" class="btn-section dashboard ">
+                        <!-- active -->
+                        <!-- <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.625 0.5C1.589 0.5 0.75 1.34 0.75 2.375V19.625C0.75 20.66 1.59 21.5 2.625 21.5H15.375C16.41 21.5 17.25 20.66 17.25 19.625V11.75C17.25 10.7554 16.8549 9.80161 16.1517 9.09835C15.4484 8.39509 14.4946 8 13.5 8H11.625C11.1277 8 10.6508 7.80246 10.2992 7.45083C9.94754 7.0992 9.75 6.62228 9.75 6.125V4.25C9.75 3.25544 9.35491 2.30161 8.65165 1.59835C7.94839 0.895088 6.99456 0.5 6 0.5H2.625ZM4.5 14C4.5 13.8011 4.57902 13.6103 4.71967 13.4697C4.86032 13.329 5.05109 13.25 5.25 13.25H12.75C12.9489 13.25 13.1397 13.329 13.2803 13.4697C13.421 13.6103 13.5 13.8011 13.5 14C13.5 14.1989 13.421 14.3897 13.2803 14.5303C13.1397 14.671 12.9489 14.75 12.75 14.75H5.25C5.05109 14.75 4.86032 14.671 4.71967 14.5303C4.57902 14.3897 4.5 14.1989 4.5 14ZM5.25 16.25C5.05109 16.25 4.86032 16.329 4.71967 16.4697C4.57902 16.6103 4.5 16.8011 4.5 17C4.5 17.1989 4.57902 17.3897 4.71967 17.5303C4.86032 17.671 5.05109 17.75 5.25 17.75H9C9.19891 17.75 9.38968 17.671 9.53033 17.5303C9.67098 17.3897 9.75 17.1989 9.75 17C9.75 16.8011 9.67098 16.6103 9.53033 16.4697C9.38968 16.329 9.19891 16.25 9 16.25H5.25Z" fill="#39619A"/>
+                        </svg>-->
+
+                        <!-- inactive -->
+                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5 13.25V10.625C16.5 9.72989 16.1444 8.87145 15.5115 8.23851C14.8786 7.60558 14.0201 7.25 13.125 7.25H11.625C11.3266 7.25 11.0405 7.13147 10.8295 6.9205C10.6185 6.70952 10.5 6.42337 10.5 6.125V4.625C10.5 3.72989 10.1444 2.87145 9.51149 2.23851C8.87855 1.60558 8.02011 1.25 7.125 1.25H5.25M5.25 14H12.75M5.25 17H9M7.5 1.25H2.625C2.004 1.25 1.5 1.754 1.5 2.375V19.625C1.5 20.246 2.004 20.75 2.625 20.75H15.375C15.996 20.75 16.5 20.246 16.5 19.625V10.25C16.5 7.86305 15.5518 5.57387 13.864 3.88604C12.1761 2.19821 9.88695 1.25 7.5 1.25V1.25Z"
+                                stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <p>Informes</p>
+                    </a>
+
+                    <a href="" class="btn-section dashboard ">
+                        <!-- active -->
+                        <!-- <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.25C1.30109 0.25 1.11032 0.329018 0.96967 0.46967C0.829018 0.610322 0.75 0.801088 0.75 1C0.75 1.19891 0.829018 1.38968 0.96967 1.53033C1.11032 1.67098 1.30109 1.75 1.5 1.75V18.25H0.75C0.551088 18.25 0.360322 18.329 0.21967 18.4697C0.0790175 18.6103 0 18.8011 0 19C0 19.1989 0.0790175 19.3897 0.21967 19.5303C0.360322 19.671 0.551088 19.75 0.75 19.75H17.25C17.4489 19.75 17.6397 19.671 17.7803 19.5303C17.921 19.3897 18 19.1989 18 19C18 18.8011 17.921 18.6103 17.7803 18.4697C17.6397 18.329 17.4489 18.25 17.25 18.25H16.5V1.75C16.6989 1.75 16.8897 1.67098 17.0303 1.53033C17.171 1.38968 17.25 1.19891 17.25 1C17.25 0.801088 17.171 0.610322 17.0303 0.46967C16.8897 0.329018 16.6989 0.25 16.5 0.25H1.5ZM6 4C5.80109 4 5.61032 4.07902 5.46967 4.21967C5.32902 4.36032 5.25 4.55109 5.25 4.75C5.25 4.94891 5.32902 5.13968 5.46967 5.28033C5.61032 5.42098 5.80109 5.5 6 5.5H7.5C7.69891 5.5 7.88968 5.42098 8.03033 5.28033C8.17098 5.13968 8.25 4.94891 8.25 4.75C8.25 4.55109 8.17098 4.36032 8.03033 4.21967C7.88968 4.07902 7.69891 4 7.5 4H6ZM5.25 7.75C5.25 7.55109 5.32902 7.36032 5.46967 7.21967C5.61032 7.07902 5.80109 7 6 7H7.5C7.69891 7 7.88968 7.07902 8.03033 7.21967C8.17098 7.36032 8.25 7.55109 8.25 7.75C8.25 7.94891 8.17098 8.13968 8.03033 8.28033C7.88968 8.42098 7.69891 8.5 7.5 8.5H6C5.80109 8.5 5.61032 8.42098 5.46967 8.28033C5.32902 8.13968 5.25 7.94891 5.25 7.75ZM6 10C5.80109 10 5.61032 10.079 5.46967 10.2197C5.32902 10.3603 5.25 10.5511 5.25 10.75C5.25 10.9489 5.32902 11.1397 5.46967 11.2803C5.61032 11.421 5.80109 11.5 6 11.5H7.5C7.69891 11.5 7.88968 11.421 8.03033 11.2803C8.17098 11.1397 8.25 10.9489 8.25 10.75C8.25 10.5511 8.17098 10.3603 8.03033 10.2197C7.88968 10.079 7.69891 10 7.5 10H6ZM9.75 4.75C9.75 4.55109 9.82902 4.36032 9.96967 4.21967C10.1103 4.07902 10.3011 4 10.5 4H12C12.1989 4 12.3897 4.07902 12.5303 4.21967C12.671 4.36032 12.75 4.55109 12.75 4.75C12.75 4.94891 12.671 5.13968 12.5303 5.28033C12.3897 5.42098 12.1989 5.5 12 5.5H10.5C10.3011 5.5 10.1103 5.42098 9.96967 5.28033C9.82902 5.13968 9.75 4.94891 9.75 4.75ZM10.5 7C10.3011 7 10.1103 7.07902 9.96967 7.21967C9.82902 7.36032 9.75 7.55109 9.75 7.75C9.75 7.94891 9.82902 8.13968 9.96967 8.28033C10.1103 8.42098 10.3011 8.5 10.5 8.5H12C12.1989 8.5 12.3897 8.42098 12.5303 8.28033C12.671 8.13968 12.75 7.94891 12.75 7.75C12.75 7.55109 12.671 7.36032 12.5303 7.21967C12.3897 7.07902 12.1989 7 12 7H10.5ZM9.75 10.75C9.75 10.5511 9.82902 10.3603 9.96967 10.2197C10.1103 10.079 10.3011 10 10.5 10H12C12.1989 10 12.3897 10.079 12.5303 10.2197C12.671 10.3603 12.75 10.5511 12.75 10.75C12.75 10.9489 12.671 11.1397 12.5303 11.2803C12.3897 11.421 12.1989 11.5 12 11.5H10.5C10.3011 11.5 10.1103 11.421 9.96967 11.2803C9.82902 11.1397 9.75 10.9489 9.75 10.75ZM6 17.5V15.25C6 15.0511 6.07902 14.8603 6.21967 14.7197C6.36032 14.579 6.55109 14.5 6.75 14.5H11.25C11.4489 14.5 11.6397 14.579 11.7803 14.7197C11.921 14.8603 12 15.0511 12 15.25V17.5C12 17.6989 11.921 17.8897 11.7803 18.0303C11.6397 18.171 11.4489 18.25 11.25 18.25H6.75C6.55109 18.25 6.36032 18.171 6.21967 18.0303C6.07902 17.8897 6 17.6989 6 17.5Z" fill="#39619A"/>
+                        </svg> -->
+                        <!-- inactive -->
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.75 19H17.25M1.5 1H16.5M2.25 1V19M15.75 1V19M6 4.75H7.5M6 7.75H7.5M6 10.75H7.5M10.5 4.75H12M10.5 7.75H12M10.5 10.75H12M6 19V15.625C6 15.004 6.504 14.5 7.125 14.5H10.875C11.496 14.5 12 15.004 12 15.625V19"
+                                stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <p>Organización</p>
+                    </a>
+
+                </div>
+            </aside>
+            <div class="modal hidden"></div>
+
+            <hr class="separador">
+
+            <main class="dashboard">
+
+         
+                <form class="form">
+                    <div class="flex justify-between">
+    
+                            <h3 class="uppercase mb-4">DATOS PRINCIPALES</h3>
+    
+                        <div onclick="showModal('#organizacion-form-modal')" href="./dashboard-informes2.html" class="cursor-pointer flex gap-2 uppercase  text-primary ">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.862 2.987L18.5 5.625M15.862 2.987L17.549 1.299C17.9007 0.947326 18.3777 0.749756 18.875 0.749756C19.3723 0.749756 19.8493 0.947326 20.201 1.299C20.5527 1.65068 20.7502 2.12766 20.7502 2.625C20.7502 3.12235 20.5527 3.59933 20.201 3.951L5.832 18.32C5.30332 18.8484 4.65137 19.2367 3.935 19.45L1.25 20.25L2.05 17.565C2.26328 16.8486 2.65163 16.1967 3.18 15.668L15.863 2.987H15.862Z" stroke="#39619A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            editar
+                        </div>
+                    </div>
+    
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">Nombre de la organización</label>
+                            <input disabled value="Ministerio de Relaciones Exteriores" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Nombre de fantasía</label>
+                            <input disabled value="Relaciones Exteriores" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+    
+                    
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">Tipo de identificación tributaria</label>
+                            <input disabled value="RUC" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Número de identificación tributaria</label>
+                            <input disabled value="123456789-0" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+    
+                    
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">Tipo de entidad o sector económico</label>
+                            <input disabled value="Ministerio Público" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Correo electrónico institucional</label>
+                            <input disabled value="relacionesexteriores@correo.gov" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+    
+                    <h3 class="uppercase mb-4 mt-12">DATOS PRINCIPALES</h3>
+    
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">País</label>
+                            <input disabled value="Paraguay" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Departamento</label>
+                            <input disabled value="" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">Ciudad</label>
+                            <input disabled value="Asunción" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Dirección</label>
+                            <input disabled value="Calle principal N° 1234 casi Calle secundaria" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+    
+    
+                    <div class="form-control">
+                        <label for="">Ubicación</label>
+                        <textarea name="" id="" class="w-full h-[323px] md:h-[400px]"></textarea>
+                    </div>
+    
+                    <h3 class="uppercase mb-4 mt-12">otros datos</h3>
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">Otros campos</label>
+                            <input disabled value="Campo" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Otros campos</label>
+                            <input disabled value="Campo" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+                    <div class="form-control-group">
+                        <div class="form-control">
+                            <label for="n_id_tbt">Otros campos</label>
+                            <input disabled value="Campo" id="n_id_tbt" type="text"  >
+                        </div>
+                        <div class="form-control">
+                            <label for="n_id_tbt">Otros campos</label>
+                            <input disabled value="Campo" id="n_id_tbt" type="text"  >
+                        </div>
+                    </div>
+                </form>
+
+            </main>
+        </div>
+
+    </section>
+
+
+    <div class="modal-dashboard py-20 flex justify-center items-center hidden" id="organizacion-form-modal">
+
+        <div class="modal-dashboard-content w-[80%] md:w-[929px] ">
+
+            <form class="form">
+                <div class="flex justify-between">
+
+                        <h3 class="uppercase mb-4">DATOS PRINCIPALES</h3>
+
+                    <div onclick="showModal('#organizacion-form-modal')" href="./dashboard-informes2.html" class="cursor-pointer flex gap-2 uppercase  text-primary ">
+                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.862 2.987L18.5 5.625M15.862 2.987L17.549 1.299C17.9007 0.947326 18.3777 0.749756 18.875 0.749756C19.3723 0.749756 19.8493 0.947326 20.201 1.299C20.5527 1.65068 20.7502 2.12766 20.7502 2.625C20.7502 3.12235 20.5527 3.59933 20.201 3.951L5.832 18.32C5.30332 18.8484 4.65137 19.2367 3.935 19.45L1.25 20.25L2.05 17.565C2.26328 16.8486 2.65163 16.1967 3.18 15.668L15.863 2.987H15.862Z" stroke="#39619A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                        editar
+                    </div>
+                </div>
+
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">Nombre de la organización</label>
+                        <input value="Ministerio de Relaciones Exteriores" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Nombre de fantasía</label>
+                        <input value="Relaciones Exteriores" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+
+                
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">Tipo de identificación tributaria</label>
+                        <input value="RUC" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Número de identificación tributaria</label>
+                        <input value="123456789-0" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+
+                
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">Tipo de entidad o sector económico</label>
+                        <input value="Ministerio Público" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Correo electrónico institucional</label>
+                        <input value="relacionesexteriores@correo.gov" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+
+                <h3 class="uppercase mb-4 mt-12">DATOS PRINCIPALES</h3>
+
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">País</label>
+                        <input value="Paraguay" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Departamento</label>
+                        <input value="" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">Ciudad</label>
+                        <input value="Asunción" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Dirección</label>
+                        <input value="Calle principal N° 1234 casi Calle secundaria" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+
+
+                <div class="form-control">
+                    <label for="">Ubicación</label>
+                    <textarea name="" id="" class="w-full h-[323px] md:h-[400px]"></textarea>
+                </div>
+
+                <h3 class="uppercase mb-4 mt-12">otros datos</h3>
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">Otros campos</label>
+                        <input value="Campo" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Otros campos</label>
+                        <input value="Campo" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label for="n_id_tbt">Otros campos</label>
+                        <input value="Campo" id="n_id_tbt" type="text"  >
+                    </div>
+                    <div class="form-control">
+                        <label for="n_id_tbt">Otros campos</label>
+                        <input value="Campo" id="n_id_tbt" type="text"  >
+                    </div>
+                </div>
+
+
+                <hr class="my-6">
+                <div class="flex justify-between">
+                    <a onclick="showModal('#organizacion-form-modal')" href="#" class="btn primary  ">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 8.75L7.5 14.75L16.5 1.25" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Guardar cambios
+                    </a>
+
+                    <div class="space-y-1">
+                        <p>Última edición:</p>
+                        <p>12/09/2022 · 15:43 pm</p>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <footer class="footer font-sm bg-primary">
+        <div class="container footer-cont ">
+            <div>
+                <img src="./assets/img/logo.png" alt="">
+
+            </div>
+
+            <ul>
+                <li><a href="#">Trabajos y Pasantías</a></li>
+                <li><a href="#">Becas</a></li>
+                <li><a href="#">Avisos de Adquisiciones</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Directorio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <div class="socials">
+                <!-- twitter -->
+                <i>
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.71 2.09347C20.9116 2.44724 20.054 2.68628 19.1523 2.79432C20.0827 2.23765 20.7787 1.36152 21.1105 0.329406C20.2364 0.848577 19.2798 1.21402 18.2823 1.40984C17.6114 0.693565 16.7229 0.218806 15.7545 0.0592731C14.7862 -0.10026 13.7923 0.0643573 12.9272 0.527568C12.062 0.990778 11.374 1.72667 10.9699 2.62098C10.5658 3.51529 10.4683 4.51799 10.6925 5.47341C8.9214 5.38449 7.18882 4.92416 5.60718 4.1223C4.02554 3.32045 2.63018 2.19498 1.51165 0.818947C1.1292 1.47868 0.909284 2.24359 0.909284 3.05822C0.908858 3.79157 1.08945 4.51368 1.43504 5.1605C1.78063 5.80732 2.28054 6.35883 2.8904 6.76611C2.18312 6.7436 1.49145 6.55249 0.872951 6.20868V6.26605C0.87288 7.2946 1.22866 8.2915 1.87994 9.0876C2.53121 9.88369 3.43785 10.4299 4.44603 10.6337C3.78991 10.8112 3.10202 10.8374 2.43432 10.7102C2.71877 11.5952 3.27285 12.3691 4.01899 12.9235C4.76513 13.478 5.66598 13.7853 6.59542 13.8023C5.01764 15.0409 3.06909 15.7127 1.06322 15.7098C0.707904 15.7099 0.352887 15.6891 0 15.6476C2.03607 16.9568 4.4062 17.6515 6.8268 17.6488C15.0209 17.6488 19.5004 10.8622 19.5004 4.97622C19.5004 4.78499 19.4956 4.59186 19.487 4.40063C20.3583 3.77051 21.1104 2.99023 21.7081 2.09634L21.71 2.09347Z"
+                            fill="white" />
+                    </svg>
+                </i>
+
+                <!-- facebook -->
+                <i>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 10.0558C0 15.0275 3.61083 19.1617 8.33333 20V12.7775H5.83333V10H8.33333V7.7775C8.33333 5.2775 9.94417 3.88917 12.2225 3.88917C12.9442 3.88917 13.7225 4 14.4442 4.11083V6.66667H13.1667C11.9442 6.66667 11.6667 7.2775 11.6667 8.05583V10H14.3333L13.8892 12.7775H11.6667V20C16.3892 19.1617 20 15.0283 20 10.0558C20 4.525 15.5 0 10 0C4.5 0 0 4.525 0 10.0558Z"
+                            fill="white" />
+                    </svg>
+
+                </i>
+
+                <!-- instagram -->
+                <i>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.87727 0.06C6.94364 0.0109091 7.28364 0 10 0C12.7164 0 13.0564 0.0118182 14.1218 0.06C15.1873 0.108182 15.9145 0.278182 16.5509 0.524545C17.2173 0.776364 17.8218 1.17 18.3218 1.67909C18.8309 2.17818 19.2236 2.78182 19.4745 3.44909C19.7218 4.08545 19.8909 4.81273 19.94 5.87636C19.9891 6.94455 20 7.28455 20 10C20 12.7164 19.9882 13.0564 19.94 14.1227C19.8918 15.1864 19.7218 15.9136 19.4745 16.55C19.2236 17.2174 18.8303 17.822 18.3218 18.3218C17.8218 18.8309 17.2173 19.2236 16.5509 19.4745C15.9145 19.7218 15.1873 19.8909 14.1236 19.94C13.0564 19.9891 12.7164 20 10 20C7.28364 20 6.94364 19.9882 5.87727 19.94C4.81364 19.8918 4.08636 19.7218 3.45 19.4745C2.78266 19.2236 2.17802 18.8302 1.67818 18.3218C1.16944 17.8224 0.775741 17.2181 0.524545 16.5509C0.278182 15.9145 0.109091 15.1873 0.06 14.1236C0.0109091 13.0555 0 12.7155 0 10C0 7.28364 0.0118182 6.94364 0.06 5.87818C0.108182 4.81273 0.278182 4.08545 0.524545 3.44909C0.776112 2.78189 1.17011 2.17756 1.67909 1.67818C2.17822 1.16955 2.78225 0.775858 3.44909 0.524545C4.08545 0.278182 4.81273 0.109091 5.87636 0.06H5.87727ZM14.0409 1.86C12.9864 1.81182 12.67 1.80182 10 1.80182C7.33 1.80182 7.01364 1.81182 5.95909 1.86C4.98364 1.90455 4.45455 2.06727 4.10182 2.20455C3.63545 2.38636 3.30182 2.60182 2.95182 2.95182C2.62004 3.27459 2.36471 3.66753 2.20455 4.10182C2.06727 4.45455 1.90455 4.98364 1.86 5.95909C1.81182 7.01364 1.80182 7.33 1.80182 10C1.80182 12.67 1.81182 12.9864 1.86 14.0409C1.90455 15.0164 2.06727 15.5455 2.20455 15.8982C2.36455 16.3318 2.62 16.7255 2.95182 17.0482C3.27455 17.38 3.66818 17.6355 4.10182 17.7955C4.45455 17.9327 4.98364 18.0955 5.95909 18.14C7.01364 18.1882 7.32909 18.1982 10 18.1982C12.6709 18.1982 12.9864 18.1882 14.0409 18.14C15.0164 18.0955 15.5455 17.9327 15.8982 17.7955C16.3645 17.6136 16.6982 17.3982 17.0482 17.0482C17.38 16.7255 17.6355 16.3318 17.7955 15.8982C17.9327 15.5455 18.0955 15.0164 18.14 14.0409C18.1882 12.9864 18.1982 12.67 18.1982 10C18.1982 7.33 18.1882 7.01364 18.14 5.95909C18.0955 4.98364 17.9327 4.45455 17.7955 4.10182C17.6136 3.63545 17.3982 3.30182 17.0482 2.95182C16.7254 2.62006 16.3325 2.36474 15.8982 2.20455C15.5455 2.06727 15.0164 1.90455 14.0409 1.86ZM8.72273 13.0827C9.43605 13.3797 10.2303 13.4197 10.9699 13.1961C11.7095 12.9725 12.3485 12.499 12.7778 11.8566C13.2071 11.2142 13.4001 10.4426 13.3237 9.67373C13.2473 8.90485 12.9064 8.18634 12.3591 7.64091C12.0102 7.29225 11.5884 7.02528 11.1239 6.85922C10.6595 6.69317 10.164 6.63215 9.67318 6.68056C9.18233 6.72897 8.70832 6.88562 8.28528 7.13921C7.86223 7.3928 7.50068 7.73704 7.22664 8.14714C6.9526 8.55723 6.7729 9.02299 6.70047 9.51087C6.62804 9.99876 6.66468 10.4966 6.80776 10.9687C6.95084 11.4407 7.1968 11.8751 7.52793 12.2407C7.85906 12.6062 8.26711 12.8938 8.72273 13.0827ZM6.36545 6.36545C6.84275 5.88816 7.40938 5.50955 8.033 5.25124C8.65662 4.99293 9.325 4.85998 10 4.85998C10.675 4.85998 11.3434 4.99293 11.967 5.25124C12.5906 5.50955 13.1573 5.88816 13.6345 6.36545C14.1118 6.84275 14.4905 7.40938 14.7488 8.033C15.0071 8.65662 15.14 9.325 15.14 10C15.14 10.675 15.0071 11.3434 14.7488 11.967C14.4905 12.5906 14.1118 13.1573 13.6345 13.6345C12.6706 14.5985 11.3632 15.14 10 15.14C8.63678 15.14 7.3294 14.5985 6.36545 13.6345C5.40151 12.6706 4.85998 11.3632 4.85998 10C4.85998 8.63678 5.40151 7.3294 6.36545 6.36545ZM16.28 5.62545C16.3983 5.51388 16.493 5.37971 16.5585 5.23089C16.624 5.08206 16.6589 4.92161 16.6613 4.75903C16.6637 4.59645 16.6334 4.43504 16.5723 4.28437C16.5111 4.1337 16.4204 3.99683 16.3054 3.88185C16.1904 3.76688 16.0536 3.67614 15.9029 3.61502C15.7522 3.55389 15.5908 3.52361 15.4282 3.52598C15.2657 3.52835 15.1052 3.56332 14.9564 3.62881C14.8076 3.69431 14.6734 3.789 14.5618 3.90727C14.3448 4.1373 14.226 4.44284 14.2306 4.75903C14.2352 5.07522 14.3629 5.37716 14.5865 5.60077C14.8101 5.82437 15.1121 5.95203 15.4282 5.95664C15.7444 5.96125 16.05 5.84245 16.28 5.62545Z"
+                            fill="white" />
+                    </svg>
+
+                </i>
+
+                <!-- youtube -->
+                <i>
+                    <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.4996 3.50708C23.3638 3.02231 23.099 2.58342 22.7336 2.23708C22.3579 1.88008 21.8974 1.62471 21.3956 1.49508C19.5176 1.00008 11.9936 1.00008 11.9936 1.00008C8.85697 0.964389 5.72107 1.12135 2.60364 1.47008C2.10183 1.60929 1.6422 1.87036 1.26564 2.23008C0.895641 2.58608 0.627641 3.02508 0.487641 3.50608C0.151334 5.31782 -0.0120674 7.15742 -0.000359379 9.00008C-0.0123594 10.8411 0.150641 12.6801 0.487641 14.4941C0.624641 14.9731 0.891641 15.4101 1.26264 15.7631C1.63364 16.1161 2.09564 16.3711 2.60364 16.5061C4.50664 17.0001 11.9936 17.0001 11.9936 17.0001C15.1343 17.0358 18.2742 16.8788 21.3956 16.5301C21.8974 16.4004 22.3579 16.1451 22.7336 15.7881C23.0989 15.4418 23.3633 15.0029 23.4986 14.5181C23.8437 12.707 24.0115 10.8667 23.9996 9.02308C24.0256 7.17168 23.858 5.32264 23.4996 3.50608V3.50708ZM9.60164 12.4241V5.57708L15.8616 9.00108L9.60164 12.4241Z"
+                            fill="white" />
+                    </svg>
+
+                </i>
+
+                <!-- otros -->
+                <i>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.9444 0H3.05556C1.37111 0 0 1.37056 0 3.05556V16.9444C0 18.6294 1.37111 20 3.05556 20H16.9444C18.6289 20 20 18.6294 20 16.9444V3.05556C20 1.37056 18.6289 0 16.9444 0ZM5.83333 12.7778C4.14556 12.7778 2.77778 11.41 2.77778 9.72222C2.77778 8.03444 4.14556 6.66667 5.83333 6.66667C7.52111 6.66667 8.88889 8.03444 8.88889 9.72222C8.88889 11.41 7.52111 12.7778 5.83333 12.7778ZM14.1667 12.7778C12.4789 12.7778 11.1111 11.41 11.1111 9.72222C11.1111 8.03444 12.4789 6.66667 14.1667 6.66667C15.8544 6.66667 17.2222 8.03444 17.2222 9.72222C17.2222 11.41 15.8544 12.7778 14.1667 12.7778Z"
+                            fill="white" />
+                    </svg>
+
+                </i>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

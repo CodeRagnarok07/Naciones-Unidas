@@ -1,0 +1,30 @@
+
+
+
+@mixin responsive ($size) {
+    @media (min-width: $size) {
+         @content; 
+    }
+}
+
+
+
+@mixin font($size:16px, $lh:20px,   ) {
+    font-size: $size;
+    line-height: $lh;
+}
+
+@mixin flex($eje1:start, $eje2:start, $direction:row, $gap:0  ) {
+    display: flex;
+    justify-content: $eje1;
+    align-items: $eje2;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin inset($top:auto,$right:auto, $bottom:auto,$left:auto,) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
