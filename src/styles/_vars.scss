@@ -1,3 +1,40 @@
+// html[data-theme='light'] {
+//     --naranja: #F27334;
+//     --blue1: #39619A;
+//     --blue2: #406AA7;
+//     --blue3: #7396FF;
+
+//     --gray1: #F1F4F7;
+//     --gray2: #ECF0F4;
+//     --gray3: #CED5DC;
+//     --gray4: #A5AAAE;
+
+//     /*************** THEMES ***************/
+//     --black: #0B0F22;
+//     --white: #FFFFFF;
+// }
+
+
+// html[data-theme='dark'] {
+//     --naranja: #F27334;
+//     --blue1: #39619A;
+
+//     --blue2: #406AA7;
+//     --blue3: #7396FF;
+
+//     --gray1: #F1F4F7;
+//     --gray2: #ECF0F4;
+//     --gray3: #CED5DC;
+//     --gray4: #A5AAAE;
+
+//     /*************** THEMES ***************/
+//     --black: #0B0F22;
+//     --white: #FFFFFF;
+// }
+
+
+
+
 /*************** BREACKPOINTS ***************/
 $sm: 360px;
 $md: 768px;
@@ -6,31 +43,63 @@ $xl: 1360px;
 
 
 /*************** COLORS ***************/
-$naranja:#F27334;
+
+html[data-theme="dark"] {
+    --naranja: #F27334;
+    --blue1: #006FB7;
+    --blue2: #006FB7;
+    --blue3: #7396FF;
+
+    --gray1: #F1F4F7;
+    --gray2: #ECF0F4;
+    --gray3: #CED5DC;
+    --gray4: #A5AAAE;
+
+    /*************** THEMES ***************/
+    --black: #0B0F22;
+    --white: white;
+}
+
+html[data-theme="light"] {
+    --naranja: #F27334;
+    --blue1: #006FB7;
+
+    --blue2: ##006FB7;
+    --blue3: #7396FF;
+
+    --gray1: #F1F4F7;
+    --gray2: #ECF0F4;
+    --gray3: #CED5DC;
+    --gray4: #A5AAAE;
+
+    /*************** THEMES ***************/
+
+    --black: black;
+    --white: white;
 
 
+}
 
-$blue1: #F5F5F1;
-$blue2: #406AA7;
-$blue3: #7396FF;
+$naranja: var(--naranja);
+$blue1: var(--blue1);
+$blue2: var(--blue2);
+$blue3: var(--blue3);
 
-$gray1: #F1F4F7;
-$gray2: #ECF0F4;
-$gray3: #CED5DC;
-$gray4: #A5AAAE;
+$gray1: var(--gray1);
+$gray2: var(--gray2);
+$gray3: var(--gray3);
+$gray4: var(--gray4);
 
 /*************** THEMES ***************/
-$black: #006FB7;
-$white: black;
+
+$black: var(--black);
+$white: var(--white);
 
 $light1: $gray1;
 $light2: $gray2;
 $light3: $gray3;
 $light4: $gray4;
 
-$primary: $blue1;
-$secondary: $blue2;
-$primary-light: $blue3;
 
 
 $success : green;
@@ -40,12 +109,19 @@ $dark : $black;
 $danger : #DD2E2E;
 
 
+$primary: $blue1;
+$secondary: $blue2;
+$primary-light: $blue3;
+
+
+
+
 
 /*************** FONTS SIZE ***************/
 $t-xs: 14px;
 $t-sm: 15px;
 
-$t-normal: 16px; 
+$t-normal: 16px;
 
 $t-md: 20px;
 $t-lg: 24px;
@@ -71,5 +147,3 @@ $green-light : #24a8511a;
 
 $purple : #7139B8;
 $purple-light : #7139b81a;
-
-

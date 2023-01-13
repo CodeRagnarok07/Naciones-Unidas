@@ -1,32 +1,41 @@
 /*************** theme colors ***************/
 
-.primary,
+
 .bg-primary {
     background-color: v.$primary;
     color: v.$white;
+
 }
 
 .bg-secondary {
-    background-color: v.$black;
-    color: white;
+    background-color: v.$secondary;
+    color: v.$white;
+
+    // svg{
+    //     fill: v.$black;
+
+    //     path{
+    //         fill: v.$black;
+    //     }
+    // }
 }
+
+
 
 .fill-black {
     svg {
         fill: black;
-
         path {
             fill: black;
-
         }
     }
 }
 
 .light,
 .bg-light {
-    background-color: v.$primary;
-    color: v.$black;
-    border: 1.5px v.$gray1 solid;
+    background-color: v.$light1;
+    color: v.$primary;
+    border: 1.5px v.$light2 solid;
 }
 
 .light2,
@@ -72,20 +81,20 @@
     background-color: v.$light1;
 }
 
-.bg-white {
+.bg-white{
     background-color: v.$white;
     color: v.$primary;
 
 }
 
-.white-cont {
+.white-cont{
     background-color: v.$white;
 
 }
 
 /*************** text colors ***************/
 
-.text-primary {
+.text-primary{
     color: v.$primary;
 
 }
@@ -122,4 +131,18 @@
     --tw-text-opacity: 1;
     color: v.$black;
     background-color: v.$light2;
+}
+
+
+
+
+// buttoms
+
+.btn{
+    background-color: v.$secondary;
+
+    &.primary{
+        background-color: v.$secondary;
+       color: white;
+    }
 }

@@ -1,3 +1,23 @@
+
+// hanldeThemeMode
+
+(() => {
+    const container = document.getElementsByTagName('html')[0];
+    
+
+    if(window.matchMedia('(max-width: 1000px)').matches){
+        container.setAttribute('data-theme', "dark");
+
+    }else{
+        container.setAttribute('data-theme', "light");
+
+    }
+
+
+
+})();
+
+
 // tooltip with options
 (() => {
     const all_tooltip_options = document.getElementsByClassName("tooltip_options")
@@ -37,10 +57,27 @@
             modal.classList.toggle("hidden")
         }
 
+        
+
         clicker.onclick = () => activador()
 
         parent.appendChild(clicker)
-        parent.appendChild(svg_icons)
+
+        if(window.matchMedia('(max-width: 1000px)').matches && parent.classList.contains("home")){
+    
+            const svg = document.createElement("div")
+            svg.innerHTML = `<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            `
+                parent.appendChild(svg)
+
+        }else{
+                
+            parent.appendChild(svg_icons)
+
+        }
     }
 })();
 

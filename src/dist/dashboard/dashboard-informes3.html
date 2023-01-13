@@ -7,16 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./styles/resets.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/resets.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
 
 <body class="">
 
     <nav class="navbar font-sm bg-primary">
-
-
         <div class="container flex-bt">
 
             <div class="w-max md:hidden">
@@ -32,7 +30,7 @@
 
 
             <a class="logo" href="index.html">
-                <img src="./assets/img/logo.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
             </a>
 
             <div class="w-max">
@@ -86,6 +84,7 @@
     <!-- modal for navbar -->
     <div class="modal hidden modal-util"></div>
 
+
     <section class="container mt-12 mb-20">
         <header class="header mb-6">
             <div class="navigator">
@@ -120,7 +119,7 @@
         <hr>
 
         <div class="main-container dashboard">
-         
+
             <aside id="sidebar" class="dashboard-left-bar hidden">
                 <div class="section-select  ">
                     <a href="" class="btn-section dashboard current">
@@ -194,156 +193,58 @@
             <hr class="separador">
 
             <main class="dashboard">
+                <div class="flex mb-7">
 
-                <!-- news -->
-                <section class="mt-8">
-                    <h3 class="uppercase mb-4">nuevas notificaciones</h3>
+                    <a href="../dashboard-informes2.html" class=" btn text-primary ">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 8H1.5M1.5 8L8.25 14.75M1.5 8L8.25 1.25" stroke="#39619A" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Volver atrás
+                    </a>
+                </div>
 
-                    <div class="list-dashboard">
+                <h3 class="subtitle">ENCABEZADO</h3>
 
-                        <!-- item 1 -->
-                        <div class="item-list">
+                <div class="bar-progres" id="bar_progres">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
 
-                            <div class="item-list-header">
+                <form action="" class="form form_step" id="form_step">
 
-                                <h3>Indicador 4</h3>
+                    <!-- paso 1 -->
 
-                            </div>
+                    <div class="step form">
 
-                            <p class="mt-[17px] mb-[20px]">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
-                            </p>
 
-                            <div class="flex">
-                                <a href="#" class="file">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
 
-                                    <p class="text-primary">
-                                        Abrir Indicador
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- item 2 -->
-                        <div class="item-list">
-
-                            <div class="item-list-header">
-
-                                <h3>Indicador 4</h3>
-
-                            </div>
-
-                            <p class="mt-[17px] mb-[20px]">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
-                            </p>
-
-                            <div class="flex">
-                                <a href="#" class="file">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-
-                                    <p class="text-primary">
-                                        Abrir Indicador
-                                    </p>
-                                </a>
+                        <div class="form-control">
+                            <label for="type">Convención</label>
+                            <div class="selection">
+                                <select name="user" id="type">
+                                    <option value="option1">option1</option>
+                                </select>
                             </div>
                         </div>
 
-                        <!-- item 3 -->
-                        <div class="item-list">
-
-                            <div class="item-list-header">
-
-                                <h3>Indicador 4</h3>
-
-                            </div>
-
-                            <p class="mt-[17px] mb-[20px]">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
-                            </p>
-
-                            <div class="flex">
-                                <a href="#" class="file">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-
-                                    <p class="text-primary">
-                                        Abrir Indicador
-                                    </p>
-                                </a>
+                        <div class="form-control">
+                            <label for="type">Período</label>
+                            <div class="selection">
+                                <select name="user" id="type">
+                                    <option value="option1">option1</option>
+                                </select>
                             </div>
                         </div>
 
-
-                    </div>
-
-                </section>
-
-
-
-
-                <!-- Olds -->
-                <section class="mt-16">
-                    <h3 class="uppercase mb-4">anteriores</h3>
-
-                    <div class="list-dashboard">
-
-                        <!-- item 1 -->
-                        <div class="item-list">
-
-                            <div class="item-list-header">
-
-                                <h3>Indicador 4</h3>
-
-                            </div>
-
-                            <p class="mt-[17px] mb-[20px]">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
-                            </p>
-
-                            <div class="flex">
-                                <a href="#" class="file">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-
-                                    <p class="text-primary">
-                                        Abrir Indicador
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- item 2 -->
-                        <div class="item-list item-list-inactive">
-
-                            <div class="item-list-header">
-
-                                <h3>Indicador 4</h3>
-
-                            </div>
-
-                            <p class="mt-[17px] mb-[20px]">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
-                            </p>
-                            <div class="flex">
-
-                                <div class="tag tag-gray">
-                                    cerrado
-                                </div>
+                        <div class="form-control">
+                            <label for="type">País</label>
+                            <div class="selection">
+                                <select name="user" id="type">
+                                    <option value="option1">option1</option>
+                                </select>
                             </div>
                         </div>
 
@@ -351,7 +252,60 @@
 
                     </div>
 
-                </section>
+
+                    <!-- paso 2 -->
+
+                    <div class="step form">
+
+
+
+                        <div class="form-control">
+                            <label for="type">Convención</label>
+                            <div class="selection">
+                                <select name="user" id="type">
+                                    <option value="option1">option1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="">Ubicación</label>
+                            <textarea name="" id="" class="w-full h-[528px] md:h-[325px]"></textarea>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                </form>
+
+
+
+                <div class="flex-bt  mt-12">
+                    <button class="light" onclick="handleStep(false)">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 8H1.5M1.5 8L8.25 14.75M1.5 8L8.25 1.25" stroke="#39619A" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Anterior</p>
+                    </button>
+                    <button class="primary" onclick="handleStep(true)">
+                        <p>Siguiente</p>
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 8H16.5M16.5 8L9.75 1.25M16.5 8L9.75 14.75" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+
+                </div>
+
+
+
 
 
             </main>
@@ -360,10 +314,119 @@
     </section>
 
 
+    <div class="modal-dashboard py-20 flex justify-center items-center hidden" id="indicador-modal">
+
+        <div class="modal-dashboard-content w-[80%] md:w-[929px] ">
+
+            <div class="modal-dashboard-header ">
+                <h3 class="">Iniciar Sesión</h3>
+                <div class="tag tag-gray">
+                    tipo de indicador
+                </div>
+                <div class="ml-auto">
+                    <button class="light btn-sm btn-close" onclick="showModal('#indicador-modal')">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13L13 1M1 1L13 13" stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <p>Encabezado del indicador.</p>
+
+            <hr class="mt-6">
+
+            <div class="mb-6 mt-9">
+                <h3>Medición del Indicador</h3>
+                <div class="mt-4 bg-gray p-4">
+                    <span>Desagregación:</span>
+                    <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+
+            </div>
+
+
+            <form class="form" action="">
+                <div class="row">
+                    <div class="form-control">
+                        <label for="user">valor</label>
+                        <input id="user" type="text">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="user">Fecha de la medición</label>
+                        <input id="user" type="date">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
+                </div>
+
+                <hr class="my-9">
+                <div class="mb-3">
+                    <h3 class="uppercase font-medium mb-6">fuente</h3>
+                    <div class="row">
+                        <div class="form-control">
+                            <label class="">
+                                Adjuntar
+                                <div class="relative mt-[6px]">
+                                    <div class="btn absolute inset-0 bg-light ">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.3125 9.6158L7.90169 16.0266C7.19842 16.7299 6.24459 17.125 5.25002 17.125C4.25546 17.125 3.30162 16.7299 2.59836 16.0266C1.89509 15.3234 1.5 14.3695 1.5 13.375C1.5 12.3804 1.89509 11.4266 2.59836 10.7233L11.715 1.60663C11.9472 1.37452 12.2229 1.19042 12.5263 1.06485C12.8296 0.939272 13.1548 0.874679 13.4831 0.874756C13.8114 0.874833 14.1365 0.93958 14.4399 1.0653C14.7432 1.19102 15.0187 1.37525 15.2509 1.60747C15.483 1.83969 15.6671 2.11535 15.7926 2.41872C15.9182 2.72209 15.9828 3.04722 15.9827 3.37556C15.9827 3.70389 15.9179 4.02899 15.7922 4.3323C15.6665 4.63561 15.4822 4.91119 15.25 5.1433L6.12669 14.2666M6.13419 14.2583L6.12586 14.2666M10.875 5.98247L4.36669 12.4908C4.13779 12.7255 4.01029 13.0408 4.01166 13.3687C4.01303 13.6966 4.14317 14.0108 4.37402 14.2436C4.60488 14.4764 4.91797 14.6092 5.24581 14.6134C5.57366 14.6175 5.89001 14.4927 6.12669 14.2658"
+                                                stroke="#39619A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Seleccionar archivo (Máx. 10MB)
+                                    </div>
+                                    <input class="invisible" type="file">
+                                </div>
+                            </label>
+                        </div>
+
+
+                        <div class="form-control">
+                            <label for="user">valor</label>
+                            <input id="user" type="url">
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <hr class="my-6">
+                <div class="flex justify-between">
+                    <a href="form_entidad.html" class="btn primary  ">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 8.75L7.5 14.75L16.5 1.25" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Guardar cambios
+                    </a>
+
+                    <div class="space-y-1">
+                        <p>Última edición:</p>
+                        <p>12/09/2022 · 15:43 pm</p>
+                    </div>
+
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
     <footer class="footer font-sm bg-primary">
         <div class="container footer-cont ">
             <div>
-                <img src="./assets/img/logo.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
 
             </div>
 
@@ -434,7 +497,7 @@
     </footer>
 
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 </body>
 

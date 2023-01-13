@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./styles/resets.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/resets.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
 
 <body class="">
-
+    
     <nav class="navbar font-sm bg-primary">
+
+
         <div class="container flex-bt">
 
             <div class="w-max md:hidden">
@@ -30,7 +32,7 @@
 
 
             <a class="logo" href="index.html">
-                <img src="./assets/img/logo.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
             </a>
 
             <div class="w-max">
@@ -83,9 +85,9 @@
     </nav>
     <!-- modal for navbar -->
     <div class="modal hidden modal-util"></div>
-
-
     <section class="container mt-12 mb-20">
+
+
         <header class="header mb-6">
             <div class="navigator">
                 <h5>Inicio</h5>
@@ -119,7 +121,7 @@
         <hr>
 
         <div class="main-container dashboard">
-
+       
             <aside id="sidebar" class="dashboard-left-bar hidden">
                 <div class="section-select  ">
                     <a href="" class="btn-section dashboard current">
@@ -193,117 +195,206 @@
             <hr class="separador">
 
             <main class="dashboard">
-                <div class="flex mb-7">
 
-                    <a href="./dashboard-informes2.html" class=" btn text-primary ">
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8H1.5M1.5 8L8.25 14.75M1.5 8L8.25 1.25" stroke="#39619A" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Volver atrás
-                    </a>
-                </div>
+                <div class="time-card bg-light2">
 
-                <h3 class="subtitle">ENCABEZADO</h3>
+                    <div class="time-card-header">
+                        <h3 class="subtitle">Identificación</h3>
 
-                <div class="bar-progres" id="bar_progres">
-                    <div class="active"></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <form action="" class="form form_step" id="form_step">
-
-                    <!-- paso 1 -->
-
-                    <div class="step form">
-
-
-
-                        <div class="form-control">
-                            <label for="type">Convención</label>
-                            <div class="selection">
-                                <select name="user" id="type">
-                                    <option value="option1">option1</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-control">
-                            <label for="type">Período</label>
-                            <div class="selection">
-                                <select name="user" id="type">
-                                    <option value="option1">option1</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-control">
-                            <label for="type">País</label>
-                            <div class="selection">
-                                <select name="user" id="type">
-                                    <option value="option1">option1</option>
-                                </select>
-                            </div>
-                        </div>
-
+                        <h5 class="mb-3">
+                            Última edición: 12/09/2022 · 15:43 pm
+                        </h5>
 
 
                     </div>
 
 
-                    <!-- paso 2 -->
+                    <div class="progres mt-3 ">
 
-                    <div class="step form">
+                        <div class="progres-bar light">
+                            <div class="cont-progres-bar bg-primary" style="width: 50%;"> </div>
+                        </div>
 
+                        <h3 class="font-bold">28%</h3>
+                    </div>
 
+                    <div class="time-card-icons ">
 
-                        <div class="form-control">
-                            <label for="type">Convención</label>
-                            <div class="selection">
-                                <select name="user" id="type">
-                                    <option value="option1">option1</option>
-                                </select>
+                        <!-- item1 -->
+                        <div class="item-card">
+                            <svg width="27" height="36" viewBox="0 0 27 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26 21.75V17.375C26 15.8832 25.4074 14.4524 24.3525 13.3975C23.2976 12.3426 21.8668 11.75 20.375 11.75H17.875C17.3777 11.75 16.9008 11.5525 16.5492 11.2008C16.1975 10.8492 16 10.3723 16 9.875V7.375C16 5.88316 15.4074 4.45242 14.3525 3.39752C13.2976 2.34263 11.8668 1.75 10.375 1.75H7.25M7.25 23H19.75M7.25 28H13.5M11 1.75H2.875C1.84 1.75 1 2.59 1 3.625V32.375C1 33.41 1.84 34.25 2.875 34.25H24.125C25.16 34.25 26 33.41 26 32.375V16.75C26 12.7718 24.4196 8.95644 21.6066 6.1434C18.7936 3.33035 14.9782 1.75 11 1.75V1.75Z"
+                                    stroke="#0B0F22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <div>
+                                <h5 class="">Nombre</h5>
+                                <p class="">Informe paraguay 2023</p>
                             </div>
                         </div>
 
-                        <div class="form-control">
-                            <label for="">Ubicación</label>
-                            <textarea name="" id="" class="w-full h-[528px] md:h-[325px]"></textarea>
+                        <!-- item2 -->
+                        <div class="item-card">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 31C19.825 30.9998 23.0558 29.8953 25.6851 27.86C28.3143 25.8247 30.1932 22.9738 31.0267 19.755M16.5 31C13.175 30.9998 9.94424 29.8953 7.31496 27.86C4.68568 25.8247 2.8068 22.9738 1.97334 19.755M16.5 31C20.6417 31 24 24.2833 24 16C24 7.71667 20.6417 1 16.5 1M16.5 31C12.3583 31 9.00001 24.2833 9.00001 16C9.00001 7.71667 12.3583 1 16.5 1M16.5 1C19.1604 0.998891 21.7732 1.7056 24.0703 3.04761C26.3674 4.38962 28.2662 6.31861 29.5717 8.63667M16.5 1C13.8396 0.998891 11.2268 1.7056 8.92969 3.04761C6.63257 4.38962 4.73385 6.31861 3.42834 8.63667M29.5717 8.63667C25.9428 11.7799 21.3009 13.5069 16.5 13.5C11.5033 13.5 6.93334 11.6667 3.42834 8.63667M29.5717 8.63667C30.8398 10.8833 31.5041 13.4202 31.5 16C31.5 17.2967 31.335 18.555 31.0267 19.755M31.0267 19.755C26.582 22.219 21.582 23.508 16.5 23.5C11.418 23.5079 6.41808 22.2189 1.97334 19.755M1.97334 19.755C1.65792 18.5283 1.49888 17.2666 1.50001 16C1.50001 13.325 2.20001 10.8117 3.42834 8.63667"
+                                    stroke="#0B0F22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <div>
+                                <h5 class="">Convención</h5>
+                                <p class="">CIADDIS</p>
+                            </div>
+                        </div>
+
+                        <!-- item3 -->
+                        <div class="item-card">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.75 1V4.75M25.25 1V4.75M1.5 27.25V8.5C1.5 7.50544 1.89509 6.55161 2.59835 5.84835C3.30161 5.14509 4.25544 4.75 5.25 4.75H27.75C28.7446 4.75 29.6984 5.14509 30.4016 5.84835C31.1049 6.55161 31.5 7.50544 31.5 8.5V27.25M1.5 27.25C1.5 28.2446 1.89509 29.1984 2.59835 29.9016C3.30161 30.6049 4.25544 31 5.25 31H27.75C28.7446 31 29.6984 30.6049 30.4016 29.9016C31.1049 29.1984 31.5 28.2446 31.5 27.25M1.5 27.25V14.75C1.5 13.7554 1.89509 12.8016 2.59835 12.0983C3.30161 11.3951 4.25544 11 5.25 11H27.75C28.7446 11 29.6984 11.3951 30.4016 12.0983C31.1049 12.8016 31.5 13.7554 31.5 14.75V27.25M16.5 17.25H16.5133V17.2633H16.5V17.25ZM16.5 21H16.5133V21.0133H16.5V21ZM16.5 24.75H16.5133V24.7633H16.5V24.75ZM12.75 21H12.7633V21.0133H12.75V21ZM12.75 24.75H12.7633V24.7633H12.75V24.75ZM9 21H9.01333V21.0133H9V21ZM9 24.75H9.01333V24.7633H9V24.75ZM20.25 17.25H20.2633V17.2633H20.25V17.25ZM20.25 21H20.2633V21.0133H20.25V21ZM20.25 24.75H20.2633V24.7633H20.25V24.75ZM24 17.25H24.0133V17.2633H24V17.25ZM24 21H24.0133V21.0133H24V21Z"
+                                    stroke="#0B0F22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <div>
+                                <h5 class="">Etapa</h5>
+                                <p class="">PREPARACIÓN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="../dashboard-informes3.html" class="btn bg-primary mt-16 relative w-full text-xl">
+                    Redactar Informe
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8H16M16 8L9.25 1.25M16 8L9.25 14.75" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+
+
+                <div class="my-16">
+                    <div class="flex justify-between">
+
+                        <h2 class="uppercase mb-4">resumen</h2>
+
+                        <select class="filtro" name="" id="">
+                            <option selected value="">Filtrar</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                            <option value="">option 3</option>
+
+                        </select>
+                    </div>
+
+                    <div class="card-group gap-3">
+
+                        <!-- item1 -->
+                        <div class="item_sumary">
+                            <h1>7</h1>
+                            <p>Completados</p>
+                        </div>
+                        <!-- item1 -->
+                        <div class="item_sumary">
+                            <h1>7</h1>
+                            <p>Completados</p>
+                        </div>
+                        <!-- item1 -->
+                        <div class="item_sumary">
+                            <h1>7</h1>
+                            <p>Completados</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <section class="mt-16">
+                    <h3 class="uppercase mb-4">Últimos editados</h3>
+
+                    <div class="list-dashboard">
+                        <!-- item 1 -->
+                        <div class="item-list" onclick="showModal('#indicador-modal')">
+
+                            <div class="item-list-header">
+
+                                <h3>Informe 2022</h3>
+
+                                <div class="tag tag-purple">
+                                    EN PREPARACIÓN
+                                </div>
+
+                            </div>
+
+                            <p class="mt-[17px] mb-[20px]">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+                            </p>
+
+                            <div class="flex justify-between ">
+                                <small>12/09/2022 · 15:43 pm</small>
+                                <small class="">
+                                    Por: Elena Miranda
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="item-list" onclick="showModal('#indicador-modal')">
+
+                            <div class="item-list-header">
+
+                                <h3>Informe 2022</h3>
+
+                                <div class="tag tag-orange">
+                                    EN EVALUACIÓN
+                                </div>
+
+                            </div>
+
+                            <p class="mt-[17px] mb-[20px]">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+                            </p>
+
+                            <div class="flex justify-between ">
+                                <small>12/09/2022 · 15:43 pm</small>
+                                <small class="">
+                                    Por: Elena Miranda
+                                </small>
+                            </div>
+
                         </div>
 
 
+                        <!-- item 3 -->
+                        <div class="item-list" onclick="showModal('#indicador-modal')">
 
+                            <div class="item-list-header">
 
+                                <h3>Informe 2022</h3>
+
+                                <div class="tag tag-green">
+                                    APROBADO
+                                </div>
+
+                            </div>
+
+                            <p class="mt-[17px] mb-[20px]">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+                            </p>
+
+                            <div class="flex justify-between ">
+                                <small>12/09/2022 · 15:43 pm</small>
+                                <small class="">
+                                    Por: Elena Miranda
+                                </small>
+                            </div>
+
+                        </div>
                     </div>
-
-
-
-
-                </form>
-
-
-
-                <div class="flex-bt  mt-12">
-                    <button class="light" onclick="handleStep(false)">
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8H1.5M1.5 8L8.25 14.75M1.5 8L8.25 1.25" stroke="#39619A" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p>Anterior</p>
-                    </button>
-                    <button class="primary" onclick="handleStep(true)">
-                        <p>Siguiente</p>
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 8H16.5M16.5 8L9.75 1.25M16.5 8L9.75 14.75" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-
-                    </button>
-
-                </div>
-
+                </section>
 
 
 
@@ -373,7 +464,7 @@
                         <div class="form-control">
                             <label class="">
                                 Adjuntar
-                                <div class="relative mt-[6px]">
+                                <div class="relative mt-[6px]">                                    
                                     <div class="btn absolute inset-0 bg-light ">
                                         <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -401,8 +492,8 @@
 
 
                 <hr class="my-6">
-                <div class="flex justify-between">
-                    <a href="form_entidad.html" class="btn primary  ">
+                <div class="flex justify-between">                    
+                    <a href="#" class="btn primary  ">
                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.5 8.75L7.5 14.75L16.5 1.25" stroke="white" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -426,7 +517,7 @@
     <footer class="footer font-sm bg-primary">
         <div class="container footer-cont ">
             <div>
-                <img src="./assets/img/logo.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
 
             </div>
 
@@ -497,7 +588,7 @@
     </footer>
 
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 </body>
 

@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./styles/resets.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/resets.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
 
 <body class="">
 
-    <nav class="navbar font-sm bg-primary z-[11]">
+    <nav class="navbar font-sm bg-primary">
 
 
         <div class="container flex-bt">
 
-            <div class="w-max">
+            <div class="w-max md:hidden">
                 <div class="nav-button-left cursor-pointer px-5" onclick="showSidebar(this)">
-                    <div class="md:hidden ">
+                    <div class=" ">
                         <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="white" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -32,7 +32,7 @@
 
 
             <a class="logo" href="index.html">
-                <img src="./assets/img/logo.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
             </a>
 
             <div class="w-max">
@@ -87,8 +87,6 @@
     <div class="modal hidden modal-util"></div>
 
     <section class="container mt-12 mb-20">
-
-
         <header class="header mb-6">
             <div class="navigator">
                 <h5>Inicio</h5>
@@ -122,7 +120,7 @@
         <hr>
 
         <div class="main-container dashboard">
-
+         
             <aside id="sidebar" class="dashboard-left-bar hidden">
                 <div class="section-select  ">
                     <a href="" class="btn-section dashboard current">
@@ -196,111 +194,10 @@
             <hr class="separador">
 
             <main class="dashboard">
-                <div class="time-card bg-primary ">
 
-                    <div class="time-card-header">
-                        <h3 class="subtitle">Identificación</h3>
-
-                        <h5 class="mb-3">
-                            Última edición: 12/09/2022 · 15:43 pm
-                        </h5>
-
-
-                    </div>
-
-
-                    <div class="progres mt-3 ">
-
-                        <div class="progres-bar ">
-                            <div class="cont-progres-bar bg-white" style="width: 50%;"> </div>
-                        </div>
-
-                        <h3 class="font-bold">28%</h3>
-                    </div>
-
-                    <div class="time-card-icons ">
-
-                        <!-- item1 -->
-                        <div class="item-card">
-                            <svg width="27" height="36" viewBox="0 0 27 36" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M26 21.75V17.375C26 15.8832 25.4074 14.4524 24.3525 13.3975C23.2976 12.3426 21.8668 11.75 20.375 11.75H17.875C17.3777 11.75 16.9008 11.5525 16.5492 11.2008C16.1975 10.8492 16 10.3723 16 9.875V7.375C16 5.88316 15.4074 4.45242 14.3525 3.39752C13.2976 2.34263 11.8668 1.75 10.375 1.75H7.25M7.25 23H19.75M7.25 28H13.5M11 1.75H2.875C1.84 1.75 1 2.59 1 3.625V32.375C1 33.41 1.84 34.25 2.875 34.25H24.125C25.16 34.25 26 33.41 26 32.375V16.75C26 12.7718 24.4196 8.95644 21.6066 6.1434C18.7936 3.33035 14.9782 1.75 11 1.75V1.75Z"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div>
-                                <h5 class="">Nombre</h5>
-                                <p class="">Informe paraguay 2023</p>
-                            </div>
-                        </div>
-
-                        <!-- item2 -->
-                        <div class="item-card">
-                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.5 31C19.825 30.9998 23.0558 29.8953 25.6851 27.86C28.3143 25.8247 30.1932 22.9738 31.0267 19.755M16.5 31C13.175 30.9998 9.94424 29.8953 7.31496 27.86C4.68568 25.8247 2.8068 22.9738 1.97334 19.755M16.5 31C20.6417 31 24 24.2833 24 16C24 7.71667 20.6417 1 16.5 1M16.5 31C12.3583 31 9.00001 24.2833 9.00001 16C9.00001 7.71667 12.3583 1 16.5 1M16.5 1C19.1604 0.998891 21.7732 1.7056 24.0703 3.04761C26.3674 4.38962 28.2662 6.31861 29.5717 8.63667M16.5 1C13.8396 0.998891 11.2268 1.7056 8.92969 3.04761C6.63257 4.38962 4.73385 6.31861 3.42834 8.63667M29.5717 8.63667C25.9428 11.7799 21.3009 13.5069 16.5 13.5C11.5033 13.5 6.93334 11.6667 3.42834 8.63667M29.5717 8.63667C30.8398 10.8833 31.5041 13.4202 31.5 16C31.5 17.2967 31.335 18.555 31.0267 19.755M31.0267 19.755C26.582 22.219 21.582 23.508 16.5 23.5C11.418 23.5079 6.41808 22.2189 1.97334 19.755M1.97334 19.755C1.65792 18.5283 1.49888 17.2666 1.50001 16C1.50001 13.325 2.20001 10.8117 3.42834 8.63667"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div>
-                                <h5 class="">Convención</h5>
-                                <p class="">CIADDIS</p>
-                            </div>
-                        </div>
-
-                        <!-- item3 -->
-                        <div class="item-card">
-                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.75 1V4.75M25.25 1V4.75M1.5 27.25V8.5C1.5 7.50544 1.89509 6.55161 2.59835 5.84835C3.30161 5.14509 4.25544 4.75 5.25 4.75H27.75C28.7446 4.75 29.6984 5.14509 30.4016 5.84835C31.1049 6.55161 31.5 7.50544 31.5 8.5V27.25M1.5 27.25C1.5 28.2446 1.89509 29.1984 2.59835 29.9016C3.30161 30.6049 4.25544 31 5.25 31H27.75C28.7446 31 29.6984 30.6049 30.4016 29.9016C31.1049 29.1984 31.5 28.2446 31.5 27.25M1.5 27.25V14.75C1.5 13.7554 1.89509 12.8016 2.59835 12.0983C3.30161 11.3951 4.25544 11 5.25 11H27.75C28.7446 11 29.6984 11.3951 30.4016 12.0983C31.1049 12.8016 31.5 13.7554 31.5 14.75V27.25M16.5 17.25H16.5133V17.2633H16.5V17.25ZM16.5 21H16.5133V21.0133H16.5V21ZM16.5 24.75H16.5133V24.7633H16.5V24.75ZM12.75 21H12.7633V21.0133H12.75V21ZM12.75 24.75H12.7633V24.7633H12.75V24.75ZM9 21H9.01333V21.0133H9V21ZM9 24.75H9.01333V24.7633H9V24.75ZM20.25 17.25H20.2633V17.2633H20.25V17.25ZM20.25 21H20.2633V21.0133H20.25V21ZM20.25 24.75H20.2633V24.7633H20.25V24.75ZM24 17.25H24.0133V17.2633H24V17.25ZM24 21H24.0133V21.0133H24V21Z"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div>
-                                <h5 class="">Etapa</h5>
-                                <p class="">PREPARACIÓN</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="bg-white relative w-full">
-                        Ver detalle
-
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8H16M16 8L9.25 1.25M16 8L9.25 14.75" stroke="#39619A" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-
-                    </button>
-                </div>
-
-
-                <div class="my-16">
-                    <h2 class="uppercase mb-4">resumen</h2>
-
-                    <div class="card-group gap-3">
-
-                        <!-- item1 -->
-                        <div class="item_sumary">
-                            <h1>7</h1>
-                            <p>Completados</p>
-                        </div>
-                        <!-- item1 -->
-                        <div class="item_sumary">
-                            <h1>7</h1>
-                            <p>Completados</p>
-                        </div>
-                        <!-- item1 -->
-                        <div class="item_sumary">
-                            <h1>7</h1>
-                            <p>Completados</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <section class="mt-16">
-                    <h3 class="uppercase mb-4">Últimos editados</h3>
+                <!-- news -->
+                <section class="mt-8">
+                    <h3 class="uppercase mb-4">nuevas notificaciones</h3>
 
                     <div class="list-dashboard">
 
@@ -309,11 +206,7 @@
 
                             <div class="item-list-header">
 
-                                <h3>Informe 2022</h3>
-
-                                <div class="tag tag-red">
-                                    PENDIENTE
-                                </div>
+                                <h3>Indicador 4</h3>
 
                             </div>
 
@@ -321,13 +214,19 @@
                                 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
                             </p>
 
-                            <div class="flex justify-between ">
-                                <small>12/09/2022 · 15:43 pm</small>
-                                <small class="text-primary">
-                                    Por: Elena Miranda
-                                </small>
-                            </div>
+                            <div class="flex">
+                                <a href="#" class="file">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
 
+                                    <p class="text-primary">
+                                        Abrir Indicador
+                                    </p>
+                                </a>
+                            </div>
                         </div>
 
                         <!-- item 2 -->
@@ -335,11 +234,7 @@
 
                             <div class="item-list-header">
 
-                                <h3>Informe 2022</h3>
-
-                                <div class="tag tag-orange">
-                                    EN EVALUACIÓN
-                                </div>
+                                <h3>Indicador 4</h3>
 
                             </div>
 
@@ -347,26 +242,27 @@
                                 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
                             </p>
 
-                            <div class="flex justify-between ">
-                                <small>12/09/2022 · 15:43 pm</small>
-                                <small class="text-primary">
-                                    Por: Elena Miranda
-                                </small>
+                            <div class="flex">
+                                <a href="#" class="file">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p class="text-primary">
+                                        Abrir Indicador
+                                    </p>
+                                </a>
                             </div>
-
                         </div>
-
 
                         <!-- item 3 -->
                         <div class="item-list">
 
                             <div class="item-list-header">
 
-                                <h3>Informe 2022</h3>
-
-                                <div class="tag tag-green">
-                                    APROBADO
-                                </div>
+                                <h3>Indicador 4</h3>
 
                             </div>
 
@@ -374,13 +270,19 @@
                                 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
                             </p>
 
-                            <div class="flex justify-between ">
-                                <small>12/09/2022 · 15:43 pm</small>
-                                <small class="text-primary">
-                                    Por: Elena Miranda
-                                </small>
-                            </div>
+                            <div class="flex">
+                                <a href="#" class="file">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
 
+                                    <p class="text-primary">
+                                        Abrir Indicador
+                                    </p>
+                                </a>
+                            </div>
                         </div>
 
 
@@ -391,175 +293,77 @@
 
 
 
+                <!-- Olds -->
+                <section class="mt-16">
+                    <h3 class="uppercase mb-4">anteriores</h3>
+
+                    <div class="list-dashboard">
+
+                        <!-- item 1 -->
+                        <div class="item-list">
+
+                            <div class="item-list-header">
+
+                                <h3>Indicador 4</h3>
+
+                            </div>
+
+                            <p class="mt-[17px] mb-[20px]">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+                            </p>
+
+                            <div class="flex">
+                                <a href="#" class="file">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="#39619A"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p class="text-primary">
+                                        Abrir Indicador
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="item-list item-list-inactive">
+
+                            <div class="item-list-header">
+
+                                <h3>Indicador 4</h3>
+
+                            </div>
+
+                            <p class="mt-[17px] mb-[20px]">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+                            </p>
+                            <div class="flex">
+
+                                <div class="tag tag-gray">
+                                    cerrado
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </section>
+
+
             </main>
         </div>
 
     </section>
 
-    <div class="modal-dashboard py-20 flex justify-center items-center hidden" id="user-form-modal">
-
-        <div class="modal-dashboard-content w-[80%] md:w-[929px] ">
-            <div class="modal-dashboard-header ">
-
-                <h3 class="uppercase">ajustes de cuenta</h3>
-
-                <div class="ml-auto">
-                    <div class="btn light btn-sm btn-close" onclick="showModal('#user-form-modal')">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 13L13 1M1 1L13 13" stroke="#0B0F22" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <form class="form">
-
-                <div class="w-full flex justify-center">
-
-                    <div class="h-40 w-auto rounded-full relative">
-                        <img class="avatar"
-                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDxIOEBAODw8PEBAPEhAODQ8NEQ8PFREWFhURFRMYHSggGBolGxMTITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAABQQBAwIH/8QANRABAAEBBAcHAwIHAQAAAAAAAAECAwQRIQUSMUFRYXEigZGhscHRMjPhQvBScoKSorLxI//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB52ttTTtmI5b/AAB6Cfa6Qn9MYc5z8mWu2qq21TPfl4AszJihALwhRMxsmY6S9aLzXGyqe+cfUFgYLG/7q474+G6J3g6AAAAAAAAAAAAAAAAAADBpC3/RH9XwDl5vu6j+74YpkAAAAAAAGuwvurTFOrjhv1sN/RkAb40jxo/yx9myztIqjWjZKI1XC21atWdlXlO4FMAAAAAAAAAAAAAAAHKpwjHhGKJXVjMzO2ZxVr5OFnV0w8ZwSAAAAAAAAAAAAAWbCvWpirjHnvejLo2rsYcKp9pagAAAAAAAAAAAAAAZ7/8AbnrHqlKmkPtz1j1SwAAAAAAAAAAAAb9FzlVHOJ9fhuT9GTnV0hQAAAAAAAAAAAAAABnv8f8AnPWPVKWbejWpmnjHnuRgAAAAAAAAAAAAbNGfVV0j1UWLRlOVU8ZiPD/raAAAAAAAAAAAAAAD4tbSKYxmcISrzMTXM05xOfy2aT+mP5vZOABwHQAAAAAB3049z5B12iiapwjOZccBbsbPUpinh5y+2e41TNnGO7GGgAAAAAAAAAAAAAAGbSFONGPCYn290tbtKNaJp4xMIkwA+f35PpwAAByPy6AfgAHPnB397gAMR2inGYjfMxHiCtcqcLOnnn4zi93IjDLhk6AAAAAAAAAAAAAAAk36jVrnnnHft88VYBCHpeacK6o5zPdObzAAAAAAAAAe9yoxtI5Zz3PGiMZiOMxC4AAAAAAAAAAAAAAAAAADDpKyyiuN2U9NzAt104xMTsmMEWqnCZidsTgDgAAAAAAANWj7LGrW3U+qm8bpZ6tERvnOesvYAAAAAAAAAAAAAAAAAABKv9OFpPOIn29lVM0jPb6Ux7gygAAAAAERjkPqy+qOseoLYAAAAAAAAAAAAAAAAAAACPeqsa6p54eGXsoXm9RRGETjVw4dUoAAAAAAAicM+AAuROMYxsnN1Pud7iI1atm6eHKVCJAAAAAAAAAAAAAAAGa2vtNOztTy2eLBbXiqvbOXCMoBvtr7TTlHanls8WK1vddW/COFOXm8AAAAAAAAAAAB92VtVT9MzHLbHg+AG6z0h/FT30/DVZXiirZMY8JylHcBeEeyvNdOycY4TnDbY3+mcquzPHbANY5E45xnHJ0AAAAAGG9X3Ds0bd9XwD3vF6poy21cI9062vFVe2cuEZQ8gAAAAAAAAAAAAAAAAAAAAHpY21VGye7dPc3WF+pnKrsz5fhNAXRJu15mjnTw+FWiqJiJjZOYOgA+bX6Z6T6IboAAAAAAAAAAAAAAAAAAAAAAAAAq3D7dPf8A7SANAAP/2Q=="
-                            alt="">
-
-                        <div class="absolute left-14 bottom-8 flex-center ">
-                            <div
-                                class=" cursor-pointer w-9 h-9 bg-white rounded-full flex-center border border-[#CED5DC]">
-                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.68917 3.14588C4.53916 3.38331 4.33902 3.58503 4.10278 3.73691C3.86655 3.88879 3.59994 3.98713 3.32167 4.02505C3.005 4.07005 2.69083 4.11838 2.37667 4.17088C1.49917 4.31672 0.875 5.08922 0.875 5.97838V13C0.875 13.4973 1.07254 13.9742 1.42417 14.3259C1.77581 14.6775 2.25272 14.875 2.75 14.875H15.25C15.7473 14.875 16.2242 14.6775 16.5758 14.3259C16.9275 13.9742 17.125 13.4973 17.125 13V5.97838C17.125 5.08922 16.5 4.31672 15.6233 4.17088C15.3089 4.1185 14.9939 4.06988 14.6783 4.02505C14.4002 3.98702 14.1338 3.88862 13.8977 3.73675C13.6616 3.58488 13.4616 3.38321 13.3117 3.14588L12.6267 2.04922C12.4728 1.7993 12.261 1.59013 12.0092 1.43941C11.7574 1.2887 11.473 1.20088 11.18 1.18338C9.72771 1.10538 8.27229 1.10538 6.82 1.18338C6.52705 1.20088 6.24262 1.2887 5.9908 1.43941C5.73898 1.59013 5.52718 1.7993 5.37333 2.04922L4.68917 3.14588V3.14588Z"
-                                        stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.75 8.625C12.75 9.61956 12.3549 10.5734 11.6516 11.2766C10.9484 11.9799 9.99456 12.375 9 12.375C8.00544 12.375 7.05161 11.9799 6.34835 11.2766C5.64509 10.5734 5.25 9.61956 5.25 8.625C5.25 7.63044 5.64509 6.67661 6.34835 5.97335C7.05161 5.27009 8.00544 4.875 9 4.875C9.99456 4.875 10.9484 5.27009 11.6516 5.97335C12.3549 6.67661 12.75 7.63044 12.75 8.625V8.625ZM14.625 6.75H14.6317V6.75667H14.625V6.75Z"
-                                        stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </div>
-
-
-                            <div class="tooltip_options rounded-t-md bg-white">
-                                <div class="option ">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 14.5V16.75C1 17.3467 1.23705 17.919 1.65901 18.341C2.08097 18.7629 2.65326 19 3.25 19H16.75C17.3467 19 17.919 18.7629 18.341 18.341C18.7629 17.919 19 17.3467 19 16.75V14.5M5.5 5.5L10 1M10 1L14.5 5.5M10 1V14.5"
-                                            stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Cargar foto
-                                </div>
-                                <div class="option ">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.74 8.00003L11.394 17M6.606 17L6.26 8.00003M16.228 4.79003C16.57 4.84203 16.91 4.89703 17.25 4.95603M16.228 4.79103L15.16 18.673C15.1164 19.2383 14.8611 19.7662 14.445 20.1513C14.029 20.5364 13.4829 20.7502 12.916 20.75H5.084C4.5171 20.7502 3.97102 20.5364 3.55498 20.1513C3.13894 19.7662 2.88359 19.2383 2.84 18.673L1.772 4.79003M16.228 4.79003C15.0739 4.61555 13.9138 4.48313 12.75 4.39303M0.75 4.95503C1.09 4.89603 1.43 4.84103 1.772 4.79003M1.772 4.79003C2.92613 4.61555 4.08623 4.48313 5.25 4.39303M12.75 4.39303V3.47703C12.75 2.29703 11.84 1.31303 10.66 1.27603C9.55362 1.24067 8.44638 1.24067 7.34 1.27603C6.16 1.31303 5.25 2.29803 5.25 3.47703V4.39303M12.75 4.39303C10.2537 4.20011 7.74628 4.20011 5.25 4.39303"
-                                            stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Eliminar
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <hr class="mb-9">
-
-
-                <h3 class="uppercase mb-4 mt-12">DATOS Personales</h3>
-                <div class="form-control-group">
-                    <div class="form-control">
-                        <label for="n_id_tbt">Nombre y Apellido</label>
-                        <input value="Elena Miranda" id="n_id_tbt" type="text">
-                    </div>
-                    <div class="form-control">
-                        <label for="n_id_tbt">Teléfono</label>
-                        <input value="098 765 4321" id="n_id_tbt" type="text">
-                    </div>
-                </div>
-                <div class="form-control-group">
-                    <div class="form-control">
-                        <label for="n_id_tbt">Cargo</label>
-                        <input value="Recursos Humanos" id="n_id_tbt" type="text">
-                    </div>
-                    <div class="form-control">
-                        <label for="Ciudad">Permisos</label>
-                        <div class="selection">
-                            <select name="user" id="Ciudad">
-                                <option value="option1">Administrador</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-9">
-
-                <h3 class="uppercase mb-4 ">datos de acceso</h3>
-
-                <div class="form-control-group">
-                    <div class="form-control">
-                        <label for="n_id_tbt">Correo electrónico</label>
-                        <input disabled value="elena@correo.gov" id="n_id_tbt" type="email">
-                    </div>
-                    <div class="form-control">
-                        <label for="n_id_tbt">Contraseña</label>
-                        <input disabled value="elena@correo.gov" id="n_id_tbt" type="password">
-                    </div>
-                </div>
-
-
-                <div class="form-control-group mt-6">
-
-                    <div class="w-full text-primary uppercase items-center flex gap-4">
-                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.125 2.625V11.375C17.125 11.8723 16.9275 12.3492 16.5758 12.7008C16.2242 13.0525 15.7473 13.25 15.25 13.25H2.75C2.25272 13.25 1.77581 13.0525 1.42417 12.7008C1.07254 12.3492 0.875 11.8723 0.875 11.375V2.625M17.125 2.625C17.125 2.12772 16.9275 1.65081 16.5758 1.29917C16.2242 0.947544 15.7473 0.75 15.25 0.75H2.75C2.25272 0.75 1.77581 0.947544 1.42417 1.29917C1.07254 1.65081 0.875 2.12772 0.875 2.625M17.125 2.625V2.8275C17.125 3.14762 17.0431 3.46242 16.887 3.74191C16.7309 4.0214 16.5059 4.25628 16.2333 4.42417L9.98333 8.27C9.68767 8.45211 9.34725 8.54854 9 8.54854C8.65275 8.54854 8.31233 8.45211 8.01667 8.27L1.76667 4.425C1.4941 4.25711 1.26906 4.02224 1.11297 3.74275C0.95689 3.46325 0.874965 3.14845 0.875 2.82833V2.625"
-                                stroke="#39619A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        cambiar correo
-                    </div>
-
-                    <div class="w-full text-primary uppercase items-center flex gap-4">
-                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.125 2.625V11.375C17.125 11.8723 16.9275 12.3492 16.5758 12.7008C16.2242 13.0525 15.7473 13.25 15.25 13.25H2.75C2.25272 13.25 1.77581 13.0525 1.42417 12.7008C1.07254 12.3492 0.875 11.8723 0.875 11.375V2.625M17.125 2.625C17.125 2.12772 16.9275 1.65081 16.5758 1.29917C16.2242 0.947544 15.7473 0.75 15.25 0.75H2.75C2.25272 0.75 1.77581 0.947544 1.42417 1.29917C1.07254 1.65081 0.875 2.12772 0.875 2.625M17.125 2.625V2.8275C17.125 3.14762 17.0431 3.46242 16.887 3.74191C16.7309 4.0214 16.5059 4.25628 16.2333 4.42417L9.98333 8.27C9.68767 8.45211 9.34725 8.54854 9 8.54854C8.65275 8.54854 8.31233 8.45211 8.01667 8.27L1.76667 4.425C1.4941 4.25711 1.26906 4.02224 1.11297 3.74275C0.95689 3.46325 0.874965 3.14845 0.875 2.82833V2.625"
-                                stroke="#39619A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        cambiar correo
-                    </div>
-
-
-                </div>
-
-
-
-                <hr class="my-6">
-                <div class="flex justify-between">
-                    <a onclick="showModal('#user-form-modal')" href="#" class="btn primary  ">
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 8.75L7.5 14.75L16.5 1.25" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Guardar cambios
-                    </a>
-
-
-
-                </div>
-            </form>
-
-        </div>
-    </div>
-
 
     <footer class="footer font-sm bg-primary">
         <div class="container footer-cont ">
             <div>
-                <img src="./assets/img/logo.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
 
             </div>
 
@@ -630,7 +434,7 @@
     </footer>
 
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 </body>
 
