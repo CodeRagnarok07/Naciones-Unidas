@@ -74,20 +74,20 @@
     background-color: v.$light1;
 }
 
-.bg-white{
+.bg-white {
     background-color: v.$white;
-    color: v.$primary;
+    color: v.$secondary;
 
 }
 
-.white-cont{
+.white-cont {
     background-color: v.$white;
 
 }
 
 /*************** text colors ***************/
 
-.text-primary{
+.text-primary {
     color: v.$secondary;
 
 }
@@ -130,12 +130,12 @@
 
 
 // buttoms
-
-.btn{
+button,
+.btn {
     background-color: v.$primary;
 
-    &.primary{
+    &.primary {
         background-color: v.$secondary;
-       color: v.$primary;
+        color: v.$primary;
     }
 }

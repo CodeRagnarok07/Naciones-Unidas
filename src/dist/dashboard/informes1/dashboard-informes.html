@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href=".../styles/resets.css">
-    <link rel="stylesheet" href=".../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/resets.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
 
 </head>
 
@@ -30,7 +30,7 @@
 
 
             <a class="logo" href="index.html">
-                <img src=".../assets/img/logo.png" alt="">
+                <img src="../../assets/img/logo.png" alt="">
             </a>
 
             <div class="w-max">
@@ -86,7 +86,10 @@
 
 
     <section class="container mt-12 mb-20">
+
+
         <header class="header mb-6">
+
             <div class="navigator">
                 <h5>Inicio</h5>
                 <i>
@@ -97,10 +100,12 @@
                 </i>
                 <h5>other</h5>
             </div>
-            <div class="flex flex-col md:flex-row ">
-                <h1 class="title md:border-r pr-4 ">Ministerio de Relaciones Exteriores</h1>
 
-                <div class="flex items-center gap-3 mb-3 md:px-9 mt-2 md:mt-0">
+
+            <div class="flex ">
+                <h1 class="title border-r pr-4">Ministerio de Relaciones Exteriores</h1>
+
+                <div class="flex items-center gap-3 mb-3 px-9">
                     <i>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -120,7 +125,7 @@
 
         <div class="main-container dashboard">
 
-          
+           
             <aside id="sidebar" class="dashboard-left-bar hidden">
                 <div class="section-select  ">
                     <a href="" class="btn-section dashboard current">
@@ -151,9 +156,7 @@
                                 d="M12.857 15.082C14.7202 14.8614 16.5509 14.4217 18.311 13.772C16.8204 12.1208 15.9967 9.9745 16 7.75V7C16 5.4087 15.3679 3.88258 14.2427 2.75736C13.1174 1.63214 11.5913 1 10 1C8.40872 1 6.8826 1.63214 5.75738 2.75736C4.63216 3.88258 4.00002 5.4087 4.00002 7V7.75C4.00304 9.97463 3.17901 12.121 1.68802 13.772C3.42102 14.412 5.24802 14.857 7.14302 15.082M12.857 15.082C10.959 15.3071 9.04104 15.3071 7.14302 15.082M12.857 15.082C13.0011 15.5319 13.037 16.0094 12.9616 16.4757C12.8863 16.942 12.7019 17.384 12.4234 17.7656C12.145 18.1472 11.7803 18.4576 11.3592 18.6716C10.9381 18.8856 10.4724 18.9972 10 18.9972C9.52765 18.9972 9.06195 18.8856 8.64083 18.6716C8.21972 18.4576 7.85509 18.1472 7.57664 17.7656C7.29819 17.384 7.11379 16.942 7.03844 16.4757C6.96309 16.0094 6.99892 15.5319 7.14302 15.082M1.12402 5.5C1.40599 3.82497 2.15782 2.26444 3.29202 1M16.708 1C17.8422 2.26444 18.5941 3.82497 18.876 5.5"
                                 stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <div class="cont -ml-5">5</div>
-                        <p class="notification  " >
-                            Notificaciones</p>
+                       <p class="notification" cont="5" >Notificaciones</p>
 
 
                     </a>
@@ -195,78 +198,136 @@
             <hr class="separador">
 
             <main class="dashboard">
-                <div class="flex mb-7">
+                <div class="time-card bg-primary ">
 
-                    <a href="dashboard-informes-redactar.html" class=" btn no-line text-primary ">
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8H1.5M1.5 8L8.25 14.75M1.5 8L8.25 1.25" stroke="#39619A" stroke-width="1.5"
+                    <div class="time-card-header">
+                        <h3 class="subtitle">Identificación</h3>
+
+                        <h5 class="mb-3">
+                            Última edición: 12/09/2022 · 15:43 pm
+                        </h5>
+
+
+                    </div>
+
+
+                    <div class="progres mt-3 ">
+
+                        <div class="progres-bar ">
+                            <div class="cont-progres-bar" style="width: 50%;"> </div>
+                        </div>
+
+                        <h3 class="font-bold">28%</h3>
+                    </div>
+
+                    <div class="time-card-icons">
+
+                        <!-- item1 -->
+                        <div class="item-card">
+                            <svg width="27" height="36" viewBox="0 0 27 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26 21.75V17.375C26 15.8832 25.4074 14.4524 24.3525 13.3975C23.2976 12.3426 21.8668 11.75 20.375 11.75H17.875C17.3777 11.75 16.9008 11.5525 16.5492 11.2008C16.1975 10.8492 16 10.3723 16 9.875V7.375C16 5.88316 15.4074 4.45242 14.3525 3.39752C13.2976 2.34263 11.8668 1.75 10.375 1.75H7.25M7.25 23H19.75M7.25 28H13.5M11 1.75H2.875C1.84 1.75 1 2.59 1 3.625V32.375C1 33.41 1.84 34.25 2.875 34.25H24.125C25.16 34.25 26 33.41 26 32.375V16.75C26 12.7718 24.4196 8.95644 21.6066 6.1434C18.7936 3.33035 14.9782 1.75 11 1.75V1.75Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h5 class="">Nombre</h5>
+                            <p class="">Informe paraguay 2023</p>
+                        </div>
+
+                        <!-- item2 -->
+                        <div class="item-card">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 31C19.825 30.9998 23.0558 29.8953 25.6851 27.86C28.3143 25.8247 30.1932 22.9738 31.0267 19.755M16.5 31C13.175 30.9998 9.94424 29.8953 7.31496 27.86C4.68568 25.8247 2.8068 22.9738 1.97334 19.755M16.5 31C20.6417 31 24 24.2833 24 16C24 7.71667 20.6417 1 16.5 1M16.5 31C12.3583 31 9.00001 24.2833 9.00001 16C9.00001 7.71667 12.3583 1 16.5 1M16.5 1C19.1604 0.998891 21.7732 1.7056 24.0703 3.04761C26.3674 4.38962 28.2662 6.31861 29.5717 8.63667M16.5 1C13.8396 0.998891 11.2268 1.7056 8.92969 3.04761C6.63257 4.38962 4.73385 6.31861 3.42834 8.63667M29.5717 8.63667C25.9428 11.7799 21.3009 13.5069 16.5 13.5C11.5033 13.5 6.93334 11.6667 3.42834 8.63667M29.5717 8.63667C30.8398 10.8833 31.5041 13.4202 31.5 16C31.5 17.2967 31.335 18.555 31.0267 19.755M31.0267 19.755C26.582 22.219 21.582 23.508 16.5 23.5C11.418 23.5079 6.41808 22.2189 1.97334 19.755M1.97334 19.755C1.65792 18.5283 1.49888 17.2666 1.50001 16C1.50001 13.325 2.20001 10.8117 3.42834 8.63667"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <h5 class="">Convención</h5>
+                            <p class="">CIADDIS</p>
+                        </div>
+
+                        <!-- item3 -->
+                        <div class="item-card">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.75 1V4.75M25.25 1V4.75M1.5 27.25V8.5C1.5 7.50544 1.89509 6.55161 2.59835 5.84835C3.30161 5.14509 4.25544 4.75 5.25 4.75H27.75C28.7446 4.75 29.6984 5.14509 30.4016 5.84835C31.1049 6.55161 31.5 7.50544 31.5 8.5V27.25M1.5 27.25C1.5 28.2446 1.89509 29.1984 2.59835 29.9016C3.30161 30.6049 4.25544 31 5.25 31H27.75C28.7446 31 29.6984 30.6049 30.4016 29.9016C31.1049 29.1984 31.5 28.2446 31.5 27.25M1.5 27.25V14.75C1.5 13.7554 1.89509 12.8016 2.59835 12.0983C3.30161 11.3951 4.25544 11 5.25 11H27.75C28.7446 11 29.6984 11.3951 30.4016 12.0983C31.1049 12.8016 31.5 13.7554 31.5 14.75V27.25M16.5 17.25H16.5133V17.2633H16.5V17.25ZM16.5 21H16.5133V21.0133H16.5V21ZM16.5 24.75H16.5133V24.7633H16.5V24.75ZM12.75 21H12.7633V21.0133H12.75V21ZM12.75 24.75H12.7633V24.7633H12.75V24.75ZM9 21H9.01333V21.0133H9V21ZM9 24.75H9.01333V24.7633H9V24.75ZM20.25 17.25H20.2633V17.2633H20.25V17.25ZM20.25 21H20.2633V21.0133H20.25V21ZM20.25 24.75H20.2633V24.7633H20.25V24.75ZM24 17.25H24.0133V17.2633H24V17.25ZM24 21H24.0133V21.0133H24V21Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <h5 class="">Etapa</h5>
+                            <p class="">PREPARACIÓN</p>
+                        </div>
+                    </div>
+
+                    <button class="text-primary relative w-full">
+                        Ver detalle
+
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8H16M16 8L9.25 1.25M16 8L9.25 14.75" stroke="#39619A" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        Volver atrás
-                    </a>
-                </div>
 
-                <h3 class="subtitle">Informe 2023</h3>
-
-                <!-- bucador -->
-                <form action="" class="form" id="">
-                    <label class="buscador">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.7656 14.6895L10.6934 9.61719C11.4805 8.59961 11.9062 7.35547 11.9062 6.04688C11.9062 4.48047 11.2949 3.01172 10.1895 1.9043C9.08398 0.796875 7.61133 0.1875 6.04688 0.1875C4.48242 0.1875 3.00977 0.798828 1.9043 1.9043C0.796875 3.00977 0.1875 4.48047 0.1875 6.04688C0.1875 7.61133 0.798828 9.08398 1.9043 10.1895C3.00977 11.2969 4.48047 11.9062 6.04688 11.9062C7.35547 11.9062 8.59766 11.4805 9.61523 10.6953L14.6875 15.7656C14.7024 15.7805 14.72 15.7923 14.7395 15.8004C14.7589 15.8084 14.7797 15.8126 14.8008 15.8126C14.8218 15.8126 14.8427 15.8084 14.8621 15.8004C14.8815 15.7923 14.8992 15.7805 14.9141 15.7656L15.7656 14.916C15.7805 14.9011 15.7923 14.8835 15.8004 14.864C15.8084 14.8446 15.8126 14.8238 15.8126 14.8027C15.8126 14.7817 15.8084 14.7609 15.8004 14.7414C15.7923 14.722 15.7805 14.7043 15.7656 14.6895ZM9.14062 9.14062C8.3125 9.9668 7.21484 10.4219 6.04688 10.4219C4.87891 10.4219 3.78125 9.9668 2.95312 9.14062C2.12695 8.3125 1.67188 7.21484 1.67188 6.04688C1.67188 4.87891 2.12695 3.7793 2.95312 2.95312C3.78125 2.12695 4.87891 1.67188 6.04688 1.67188C7.21484 1.67188 8.31445 2.125 9.14062 2.95312C9.9668 3.78125 10.4219 4.87891 10.4219 6.04688C10.4219 7.21484 9.9668 8.31445 9.14062 9.14062Z"
-                                fill="#D2D5DC" />
-                        </svg>
-
-                        <input class="" id="o_name" type="text">
-                    </label>
-                </form>
-
-                <!-- list -->
-                <div class="mt-3">
-
-                    <div class="toggle-list">
-                        <div class="item-toggle-list cursor-pointer">Encabezado</div>
-                        <ul>
-                            <li>Sub-item 1
-                                <a href="dashboard-informes-redactar-editar.html" class="editar space-x-0">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.862 3.487L18.5 6.125M15.862 3.487L17.549 1.799C17.9007 1.44733 18.3777 1.24976 18.875 1.24976C19.3723 1.24976 19.8493 1.44733 20.201 1.799C20.5527 2.15068 20.7502 2.62766 20.7502 3.125C20.7502 3.62235 20.5527 4.09933 20.201 4.451L5.832 18.82C5.30332 19.3484 4.65137 19.7367 3.935 19.95L1.25 20.75L2.05 18.065C2.26328 17.3486 2.65163 16.6967 3.18 16.168L15.863 3.487H15.862Z"
-                                            stroke="#39619A" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Editar
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="toggle-list ">
-                        <div class="item-toggle-list cursor-pointer">Anexos</div>
-                        <ul>
-                            <li>anexo 1
-                                <a href="dashboard-informes-redactar-editar-anexo.html" class="editar space-x-0">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.862 3.487L18.5 6.125M15.862 3.487L17.549 1.799C17.9007 1.44733 18.3777 1.24976 18.875 1.24976C19.3723 1.24976 19.8493 1.44733 20.201 1.799C20.5527 2.15068 20.7502 2.62766 20.7502 3.125C20.7502 3.62235 20.5527 4.09933 20.201 4.451L5.832 18.82C5.30332 19.3484 4.65137 19.7367 3.935 19.95L1.25 20.75L2.05 18.065C2.26328 17.3486 2.65163 16.6967 3.18 16.168L15.863 3.487H15.862Z"
-                                            stroke="#39619A" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Editar
-                                </a>
-                            </li>
-                          
+                    </button>
 
 
-                        </ul>
-                    </div>
 
                 </div>
 
+                <section class="mt-16">
+                    <h3 class="uppercase mb-4">informes anteriores</h3>
+
+                    <div class="list-dashboard">
+
+                        <!-- item 1 -->
+                        <div class="item-list">
+
+                            <div class="item-list-header">
+
+
+                                <div class="flex items-center gap-2 font-bold">
+                                    <h4>Informe 2022</h4>
+                                    ·
+                                    <p>Ciaddis</p>
+                                </div>
+                                <svg width="4" height="16" viewBox="0 0 4 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 2.75C1.80109 2.75 1.61032 2.67098 1.46967 2.53033C1.32902 2.38968 1.25 2.19891 1.25 2C1.25 1.80109 1.32902 1.61032 1.46967 1.46967C1.61032 1.32902 1.80109 1.25 2 1.25C2.19891 1.25 2.38968 1.32902 2.53033 1.46967C2.67098 1.61032 2.75 1.80109 2.75 2C2.75 2.19891 2.67098 2.38968 2.53033 2.53033C2.38968 2.67098 2.19891 2.75 2 2.75ZM2 8.75C1.80109 8.75 1.61032 8.67098 1.46967 8.53033C1.32902 8.38968 1.25 8.19891 1.25 8C1.25 7.80109 1.32902 7.61032 1.46967 7.46967C1.61032 7.32902 1.80109 7.25 2 7.25C2.19891 7.25 2.38968 7.32902 2.53033 7.46967C2.67098 7.61032 2.75 7.80109 2.75 8C2.75 8.19891 2.67098 8.38968 2.53033 8.53033C2.38968 8.67098 2.19891 8.75 2 8.75ZM2 14.75C1.80109 14.75 1.61032 14.671 1.46967 14.5303C1.32902 14.3897 1.25 14.1989 1.25 14C1.25 13.8011 1.32902 13.6103 1.46967 13.4697C1.61032 13.329 1.80109 13.25 2 13.25C2.19891 13.25 2.38968 13.329 2.53033 13.4697C2.67098 13.6103 2.75 13.8011 2.75 14C2.75 14.1989 2.67098 14.3897 2.53033 14.5303C2.38968 14.671 2.19891 14.75 2 14.75Z"
+                                        stroke="#0B0F22" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <p class="my-[22px]">
+                                Lorem ipsum dolorem Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit, sed do eiusmod tempor.
+                            </p>
+
+                            <div class="flex">
+                                <div class="file">
+                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.5 13.25V10.625C16.5 9.72989 16.1444 8.87145 15.5115 8.23851C14.8786 7.60558 14.0201 7.25 13.125 7.25H11.625C11.3266 7.25 11.0405 7.13147 10.8295 6.9205C10.6185 6.70952 10.5 6.42337 10.5 6.125V4.625C10.5 3.72989 10.1444 2.87145 9.51149 2.23851C8.87855 1.60558 8.02011 1.25 7.125 1.25H5.25M5.25 14H12.75M5.25 17H9M7.5 1.25H2.625C2.004 1.25 1.5 1.754 1.5 2.375V19.625C1.5 20.246 2.004 20.75 2.625 20.75H15.375C15.996 20.75 16.5 20.246 16.5 19.625V10.25C16.5 7.86305 15.5518 5.57387 13.864 3.88604C12.1761 2.19821 9.88695 1.25 7.5 1.25V1.25Z"
+                                            stroke="#39619A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="text-primary">
+                                        Ver informe
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
 
 
 
+
+                    </div>
+
+                </section>
             </main>
         </div>
 
@@ -275,10 +336,12 @@
 
 
 
+
     <footer class="footer font-sm bg-primary">
+
         <div class="container footer-cont ">
             <div>
-                <img src=".../assets/img/logo.png" alt="">
+                <img src="../../assets/img/logo.png" alt="">
 
             </div>
 
@@ -348,8 +411,8 @@
         </div>
     </footer>
 
-    <script src=".../assets/js/script.js"></script>
-    <script src=".../assets/js/toggle-list.js"></script>
+
+    <script src="../../assets/js/script.js"></script>
 
 </body>
 

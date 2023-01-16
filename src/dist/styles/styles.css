@@ -336,7 +336,8 @@ a.link {
 
 .warning,
 .bg-warning,
-.cont {
+.cont,
+.notification::after {
   background-color: var(--naranja);
   color: var(--white);
 }
@@ -360,7 +361,7 @@ a.link {
 
 .bg-white {
   background-color: var(--white);
-  color: var(--gray1);
+  color: var(--blue1);
 }
 
 .white-cont {
@@ -402,9 +403,11 @@ a.link {
   background-color: var(--gray2);
 }
 
+button,
 .btn {
   background-color: var(--gray1);
 }
+button.primary,
 .btn.primary {
   background-color: var(--blue1);
   color: var(--gray1);
@@ -950,6 +953,9 @@ body {
 .footer .footer-cont li {
   margin-bottom: 1rem;
 }
+.footer .footer-cont li:hover {
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .footer .footer-cont {
     display: flex;
@@ -1092,6 +1098,7 @@ body {
     position: relative;
     padding: 0px;
     top: 0px;
+    left: 0;
     display: flex;
     z-index: 0;
   }
@@ -1183,6 +1190,18 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.notification::after {
+  content: attr(cont);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0;
+  top: 0;
+}
 
 .cont {
   position: absolute;
@@ -1239,6 +1258,7 @@ body {
   padding: 1.5rem;
   z-index: 2;
   background-color: var(--blue1);
+  color: var(--white);
 }
 .time-card::before {
   z-index: 0;

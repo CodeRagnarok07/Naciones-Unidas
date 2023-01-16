@@ -213,17 +213,17 @@ body {
         :last-child {
 
             svg {
-            fill: v.$black;
-
-            path {
                 fill: v.$black;
+
+                path {
+                    fill: v.$black;
+                }
             }
-        }
 
 
         }
 
-    
+
     }
 }
 
@@ -270,6 +270,9 @@ body {
 
         li {
             margin-bottom: 1rem;
+            &:hover{
+                text-decoration: underline
+            }
         }
 
         @include responsive(v.$md) {
@@ -439,6 +442,8 @@ body {
         position: relative;
         padding: 0px;
         top: 0px;
+    left: 0;
+
         display: flex;
         z-index: 0;
 
@@ -544,6 +549,21 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    &::after {
+        @extend .bg-warning;
+        content: attr(cont);
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 0;
+        top: 0;
+
+    }
+
 }
 
 .cont {
@@ -621,7 +641,9 @@ body {
     padding: 1.5rem;
     z-index: 2;
 
-     background-color: v.$secondary;
+    background-color: v.$secondary;
+    color: v.$white;
+
     &::before {
         z-index: 0;
         content: "";
