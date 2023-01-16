@@ -1,31 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*************** BREACKPOINTS ***************/
 /*************** COLORS ***************/
-html[data-theme=dark] {
+:root {
   --naranja: #F27334;
   --blue1: #006FB7;
-  --blue2: #006FB7;
+  --blue2: #55C8FF;
   --blue3: #7396FF;
-  --gray1: #F1F4F7;
+  --gray1: #F5F5F1;
   --gray2: #ECF0F4;
   --gray3: #CED5DC;
   --gray4: #A5AAAE;
   /*************** THEMES ***************/
   --black: #0B0F22;
-  --white: white;
-}
-
-html[data-theme=light] {
-  --naranja: #F27334;
-  --blue1: #006FB7;
-  --blue2: ##006FB7;
-  --blue3: #7396FF;
-  --gray1: #F1F4F7;
-  --gray2: #ECF0F4;
-  --gray3: #CED5DC;
-  --gray4: #A5AAAE;
-  /*************** THEMES ***************/
-  --black: black;
   --white: white;
 }
 
@@ -313,20 +299,13 @@ a.link {
 
 /*************** theme colors ***************/
 .bg-primary {
-  background-color: var(--blue1);
-  color: var(--white);
+  background-color: var(--gray1);
+  color: var(--black);
 }
 
 .bg-secondary {
-  background-color: var(--blue2);
+  background-color: var(--blue1);
   color: var(--white);
-}
-
-.fill-black svg {
-  fill: black;
-}
-.fill-black svg path {
-  fill: black;
 }
 
 .light,
@@ -365,7 +344,7 @@ a.link {
 .danger,
 .bg-danger {
   background-color: #DD2E2E;
-  color: var(--blue1);
+  color: var(--gray1);
 }
 
 .danger,
@@ -381,7 +360,7 @@ a.link {
 
 .bg-white {
   background-color: var(--white);
-  color: var(--blue1);
+  color: var(--gray1);
 }
 
 .white-cont {
@@ -424,11 +403,11 @@ a.link {
 }
 
 .btn {
-  background-color: var(--blue2);
+  background-color: var(--gray1);
 }
 .btn.primary {
-  background-color: var(--blue2);
-  color: white;
+  background-color: var(--blue1);
+  color: var(--gray1);
 }
 
 .container {
@@ -759,10 +738,12 @@ textarea:disabled,
   gap: 12px;
   display: flex;
   align-items: center;
+  color: var(--black);
 }
 .tooltip .tooltip_options .option > span {
   display: flex;
   align-items: center;
+  color: var(--black);
 }
 
 .toggle-list {
@@ -785,7 +766,7 @@ textarea:disabled,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--blue1);
+  color: var(--gray1);
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -848,12 +829,12 @@ textarea:disabled,
 
 .active {
   background-color: var(--gray1);
-  color: var(--blue1);
+  color: var(--gray1);
   border: 1.5px var(--gray2) solid;
 }
 
 .check {
-  fill: var(--blue1);
+  fill: var(--gray1);
 }
 
 .hidden-util {
@@ -922,11 +903,18 @@ body {
     margin-left: 0rem;
   }
 }
+.navbar .tooltip-responsive :last-child svg {
+  fill: var(--black);
+}
+.navbar .tooltip-responsive :last-child svg path {
+  fill: var(--black);
+}
 
 .footer {
   margin-top: auto;
   padding: 24px;
   text-transform: uppercase;
+  border-bottom: var(--blue2) 8px solid;
 }
 @media (min-width: 768px) {
   .footer {
@@ -954,10 +942,10 @@ body {
   flex-wrap: wrap;
 }
 .footer .footer-cont .socials svg {
-  fill: var(--white);
+  fill: var(--black);
 }
 .footer .footer-cont .socials svg path {
-  fill: var(--white);
+  fill: var(--black);
 }
 .footer .footer-cont li {
   margin-bottom: 1rem;
@@ -1145,7 +1133,7 @@ body {
 .btn-section.current {
   color: var(--blue1);
   background-color: var(--gray2);
-  border-bottom: 2px var(--blue1) solid;
+  border-bottom: 2px var(--gray1) solid;
 }
 .btn-section.current p {
   font-weight: 600;
@@ -1153,8 +1141,8 @@ body {
 }
 @media (min-width: 768px) {
   .btn-section.current {
-    border-bottom: 0px var(--blue1) solid;
-    border-right: 4px var(--blue1) solid;
+    border-bottom: 0px var(--gray1) solid;
+    border-right: 4px var(--gray1) solid;
   }
 }
 .btn-section.btn-section-category {
@@ -1184,7 +1172,7 @@ body {
   min-width: max-content;
 }
 .btn-section.btn-section-category:hover {
-  color: var(--blue1);
+  color: var(--gray1);
   background-color: var(--gray2);
 }
 
@@ -1250,6 +1238,7 @@ body {
   position: relative;
   padding: 1.5rem;
   z-index: 2;
+  background-color: var(--blue1);
 }
 .time-card::before {
   z-index: 0;
@@ -1347,7 +1336,7 @@ body {
 }
 .list-dashboard .item-list:hover {
   background: var(--gray2);
-  border: 2px solid var(--blue2);
+  border: 2px solid var(--blue1);
 }
 .list-dashboard .item-list.item-list-inactive {
   position: relative;
@@ -1379,7 +1368,7 @@ body {
 .filtro {
   background-color: transparent;
   outline: none;
-  color: var(--blue1);
+  color: var(--gray1);
   cursor: pointer;
   text-transform: uppercase;
 }

@@ -574,25 +574,8 @@ video {
   bottom: 2rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.left-\[-50\%\] {
-  left: -50%;
-}
-
-.left-\[0\%\] {
-  left: 0%;
-}
-
 .z-\[11\] {
   z-index: 11;
-}
-
-.my-\[22px\] {
-  margin-top: 22px;
-  margin-bottom: 22px;
 }
 
 .my-16 {
@@ -610,12 +593,25 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.my-\[22px\] {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mb-6 {
@@ -628,26 +624,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.mt-\[5px\] {
-  margin-top: 5px;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mb-9 {
-  margin-bottom: 2.25rem;
 }
 
 .mt-3 {
@@ -670,8 +646,12 @@ video {
   margin-bottom: 20px;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-4 {
@@ -682,12 +662,24 @@ video {
   margin-top: 6px;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
+.mt-\[5px\] {
+  margin-top: 5px;
+}
+
+.-ml-5 {
+  margin-left: -1.25rem;
 }
 
 .flex {
@@ -702,20 +694,28 @@ video {
   height: 100%;
 }
 
+.h-\[528px\] {
+  height: 528px;
+}
+
 .h-9 {
   height: 2.25rem;
 }
 
-.h-\[528px\] {
-  height: 528px;
+.h-40 {
+  height: 10rem;
 }
 
 .h-\[323px\] {
   height: 323px;
 }
 
-.h-40 {
-  height: 10rem;
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-max {
@@ -723,16 +723,8 @@ video {
   width: max-content;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-9 {
@@ -741,10 +733,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -767,24 +755,24 @@ video {
   gap: 0.75rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
 
-.space-x-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0px * var(--tw-space-x-reverse));
-  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-full {

@@ -44,13 +44,14 @@ $xl: 1360px;
 
 /*************** COLORS ***************/
 
-html[data-theme="dark"] {
+:root {
+
     --naranja: #F27334;
     --blue1: #006FB7;
-    --blue2: #006FB7;
+    --blue2: #55C8FF;
     --blue3: #7396FF;
 
-    --gray1: #F1F4F7;
+    --gray1: #F5F5F1;
     --gray2: #ECF0F4;
     --gray3: #CED5DC;
     --gray4: #A5AAAE;
@@ -60,25 +61,6 @@ html[data-theme="dark"] {
     --white: white;
 }
 
-html[data-theme="light"] {
-    --naranja: #F27334;
-    --blue1: #006FB7;
-
-    --blue2: ##006FB7;
-    --blue3: #7396FF;
-
-    --gray1: #F1F4F7;
-    --gray2: #ECF0F4;
-    --gray3: #CED5DC;
-    --gray4: #A5AAAE;
-
-    /*************** THEMES ***************/
-
-    --black: black;
-    --white: white;
-
-
-}
 
 $naranja: var(--naranja);
 $blue1: var(--blue1);
@@ -109,9 +91,9 @@ $dark : $black;
 $danger : #DD2E2E;
 
 
-$primary: $blue1;
-$secondary: $blue2;
-$primary-light: $blue3;
+$primary: $light1;
+$secondary: $blue1;
+$primary-light: $blue2;
 
 
 

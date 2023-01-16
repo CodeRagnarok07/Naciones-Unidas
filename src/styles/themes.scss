@@ -3,7 +3,8 @@
 
 .bg-primary {
     background-color: v.$primary;
-    color: v.$white;
+    color: v.$black;
+
 
 }
 
@@ -22,19 +23,11 @@
 
 
 
-.fill-black {
-    svg {
-        fill: black;
-        path {
-            fill: black;
-        }
-    }
-}
 
 .light,
 .bg-light {
-    background-color: v.$light1;
-    color: v.$primary;
+    background-color: v.$primary;
+    color: v.$secondary;
     border: 1.5px v.$light2 solid;
 }
 
@@ -95,7 +88,7 @@
 /*************** text colors ***************/
 
 .text-primary{
-    color: v.$primary;
+    color: v.$secondary;
 
 }
 
@@ -139,10 +132,10 @@
 // buttoms
 
 .btn{
-    background-color: v.$secondary;
+    background-color: v.$primary;
 
     &.primary{
         background-color: v.$secondary;
-       color: white;
+       color: v.$primary;
     }
 }

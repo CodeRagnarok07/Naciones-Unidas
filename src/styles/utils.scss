@@ -287,7 +287,6 @@ textarea,
 }
 
 .bar-progres {
-
     display: flex;
     gap: 0.75rem;
     margin-bottom: 1.25rem;
@@ -298,7 +297,7 @@ textarea,
         height: 0.5rem;
 
         &.active {
-            background: v.$primary;
+            background: v.$secondary;
 
         }
     }
@@ -393,12 +392,14 @@ textarea,
             display: flex;
             // justify-content: space-between;
             align-items: center;
+            color: v.$black;
 
             &:hover {}
 
             >span {
                 display: flex;
                 align-items: center;
+                color: v.$black;
             }
         }
 

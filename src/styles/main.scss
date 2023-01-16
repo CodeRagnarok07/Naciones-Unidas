@@ -208,12 +208,30 @@ body {
         }
 
     }
+
+    .tooltip-responsive {
+        :last-child {
+
+            svg {
+            fill: v.$black;
+
+            path {
+                fill: v.$black;
+            }
+        }
+
+
+        }
+
+    
+    }
 }
 
 .footer {
     margin-top: auto;
     padding: 24px;
     text-transform: uppercase;
+    border-bottom: v.$primary-light 8px solid;
 
     @include responsive(v.$md) {
         padding: 48px 0px;
@@ -239,10 +257,10 @@ body {
             flex-wrap: wrap;
 
             svg {
-                fill: v.$white;
+                fill: v.$black;
 
                 path {
-                    fill: v.$white;
+                    fill: v.$black;
                 }
             }
 
@@ -471,7 +489,7 @@ body {
     }
 
     &.current {
-        color: v.$primary;
+        color: v.$secondary;
         background-color: v.$light2;
         border-bottom: 2px v.$primary solid;
 
@@ -603,7 +621,7 @@ body {
     padding: 1.5rem;
     z-index: 2;
 
-
+     background-color: v.$secondary;
     &::before {
         z-index: 0;
         content: "";
