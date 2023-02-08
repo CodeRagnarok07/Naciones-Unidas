@@ -541,3 +541,52 @@ textarea,
 .hidden-util {
     display: hidden !important;
 }
+
+// MESSAGE
+.message {
+    margin: 1.5rem 0px;
+    background-color: red;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    outline: 1px solid lighten(#D0D0D0, 10%);
+    border-left: 8px v.$secondary solid;
+    background: #D0D0D0;
+    // position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    >svg {
+        // font-size: 1.25rem;
+        // color: v.$secondary;
+        // position: absolute;
+        min-width: 2rem;
+        left: 2%;
+        top: 40%;
+    }
+
+    .content{
+        .close {
+            margin-top: -0.5rem;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-size: 1.5rem;
+            
+            div {
+                display: grid;
+                place-content: center;
+                text-align: center;
+                cursor: pointer;
+                padding: 0.25rem;
+                border-radius: 8px;
+                &:hover {
+                    background-color: lighten(rgb(108, 108, 108), 20%);
+                }
+            }
+        }
+    }
+
+   
+}

@@ -678,10 +678,6 @@ video {
   margin-top: 5px;
 }
 
-.-ml-5 {
-  margin-left: -1.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -800,10 +796,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.fill-black {
-  fill: #000;
 }
 
 .p-4 {
